@@ -549,7 +549,7 @@ footer .bottom-footer{
 .classic img{
     height: 365px;
     padding: 15px;
-
+    max-width: 100%;
 }
 
 .classic img:hover{
@@ -634,4 +634,10 @@ footer .bottom-footer{
 }
 .contact-map{
     margin-top: 30px;
+}
+/*metal-doors*/
+.metall-prew img{
+    height: 433px;
+    float: right;
+    display: block;
 }
