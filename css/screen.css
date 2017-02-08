@@ -163,10 +163,10 @@ html, body {
   position: absolute;
   float: left;
   font-weight: 600;
-  left: 337px;
   line-height: 20px;
   padding-top: 4px;
   text-transform: uppercase;
+  left: 247px;
 }
 .isaak{
   height: 80px;
@@ -237,7 +237,6 @@ html, body {
   position: absolute;
   bottom: -28px;
   left: 0;
-  background: url(../img/big-box-arrow.png) center center repeat;
 }
 .s-1 .r2 {
   position: relative;
@@ -256,13 +255,13 @@ html, body {
   position: absolute;
   width: 100px;
   height: 90px;
-  background: url(../img/form-arrow-1.png) center center no-repeat;
   right: 13%;
   bottom: -30px;
 }
 .s-1 .form {
-  padding: 20px;
+  padding: 30px;
   background: rgba(255, 255, 255, 0.3);
+  margin-top: 30px;
 }
 .s-1 .form form .input-group {
   width: 300px;
@@ -542,7 +541,6 @@ html, body {
 }
 
 .s-4 {
-  background: url(../img/s4bg.jpg) center center no-repeat;
   padding: 40px 0 105px;
   height: 579px;
   position: relative;
@@ -696,7 +694,6 @@ html, body {
 .s-7 {
   padding: 80px 0 130px;
   position: relative;
-  background: url(../img/s7bg.jpg) center center no-repeat;
 }
 .s-7 .desc {
   text-align: center;
@@ -813,8 +810,6 @@ html, body {
 }
 .s-8 .info .quote span {
   width: 50px;
-  background: url(../img/s8quote.png) center center no-repeat;
-  width: 50px;
   height: 30px;
   display: inline-block;
   vertical-align: top;
@@ -917,7 +912,6 @@ html, body {
 
 .s-9 {
   position: relative;
-  background: url(../img/s9bg.jpg) center center no-repeat;
   padding: 130px 0;
 }
 .s-9 .desc {
@@ -1016,8 +1010,6 @@ html, body {
   margin-top: 43px;
 }
 .s-9 .info .quote span {
-  width: 50px;
-  background: url(../img/s8quote.png) center center no-repeat;
   width: 50px;
   height: 30px;
   display: inline-block;
@@ -1298,7 +1290,6 @@ html, body {
   margin: 20px 0;
 }
 .s-12 .boxs.b2 {
-  background: url(../img/s12box2.jpg) center center no-repeat;
   margin-left: 20px;
   position: relative;
 }
@@ -1324,7 +1315,6 @@ html, body {
 }
 
 .s-13 {
-  background: url(../img/pattern.png) repeat, url(../img/s13bg.jpg) center center no-repeat;
   padding: 70px 0;
   position: relative;
 }
@@ -1528,7 +1518,6 @@ html, body {
   margin-top: 50px;
 }
 .s-16 .r4 {
-  background: url(../img/s16row4bg.jpg) center center no-repeat;
 }
 
 .s-17 img {
@@ -1570,7 +1559,6 @@ html, body {
   content: '';
   width: 70px;
   height: 190px;
-  background: url(../img/form-arrow-2.png) center center no-repeat;
   position: absolute;
   right: -70px;
   bottom: -140px;
@@ -1647,8 +1635,8 @@ html, body {
   font-weight: bold;
 }
 .s-1-2 .r1-2 .t1 {
-  font-size: 30px;
-  margin-top: 75px;
+  font-size: 40px;
+  margin-top: 30px;
 }
 .s-1-2 .r1-2 .t2 {
   font-size: 55px;
@@ -1714,7 +1702,6 @@ html, body {
   line-height: 100px;
 }
 .thanks .th-2 {
-  background: url(../img/s1thbg.jpg) center center no-repeat;
   color: white;
   text-align: center;
   font-weight: bold;
@@ -1992,7 +1979,6 @@ html, body {
   font-weight: bold;
 }
 .thanks .th-5 .boxs.b2 {
-  background: url(../img/s12box2.jpg) center center no-repeat;
   padding: 160px 70px;
   color: #373f41;
 }
@@ -2076,7 +2062,6 @@ html, body {
 .thanks .th-7 {
   text-align: center;
   padding: 80px 0;
-  background: url(../img/th7bg.png) center center no-repeat;
 }
 .thanks .th-7 .p1 {
   max-width: 740px;
@@ -2171,7 +2156,7 @@ html, body {
   }
   .s-1 .r2:before {
     right: 8%;
-    border: -40px;
+
   }
   .s-1 .form form .input-group {
     width: 220px;
