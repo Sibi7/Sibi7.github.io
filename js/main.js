@@ -7,7 +7,7 @@ $(document).ready(function(){
   	});
 
     $('.scroll-to').click(function(){
-      $('body,html').animate({scrollTop: 790}, 500);
+      $('body,html').animate({scrollTop: 700}, 500);
     });
 
     $('.scroll-package').click(function(){
