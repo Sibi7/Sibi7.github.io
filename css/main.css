@@ -13,12 +13,16 @@ body{
     background: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.5)
 }
+.wrapper-footer{
+    width: 1170px;
+    margin: 0 auto;
+}
 .header{
     padding-top: 20px;
 }
 .header h1{
     background: #db263a;
-    width: 240px;
+    /*width: 240px;*/
     margin: 60px auto 30px auto;
     color: #fff;
     padding: 15px 15px;
@@ -103,7 +107,7 @@ body{
 }
 .format-system h1{
     background: #db263a;
-    width: 450px;
+    /*width: 450px;*/
     margin: 50px auto 20px auto;
     color: #fff;
     padding: 15px 15px;
@@ -112,6 +116,7 @@ body{
 }
 .format-system h2{
     text-align: center;
+    margin-top: 60px;
 
 }
 .format-system p{
@@ -123,15 +128,6 @@ body{
 .timer {
     max-width: 505px;
     margin: 0 auto !important;
-    /*margin-bottom: 40px;
-    .timer-flipchart-face{
-        border-radius: 0 !important;
-        background: #373f41 !important;
-        color: white !important;
-    }
-    .timer-separator{
-        padding: 0 10px !important;
-    }*/
 }
 .timer ul {
     text-align: center;
@@ -175,32 +171,182 @@ body{
     color: #333;
     font-size: 20px;
     font-weight: bold;
-    margin: 0;
+    margin: 40px;
 }
 .price button{
-    margin: 40px auto ;
+    margin: 40px auto 80px auto;
     display: block;
     background: #f7941e;
     border: none;
+    width: 432px;
     padding: 20px 30px;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
+    text-transform: uppercase;
     outline: none;
     cursor: pointer;
-
     }
-.wow-bonus h1{
+.wow-bonus{
+    margin-top: 20px;
+    padding: 50px 50px 0 50px;
+
+}
+.wow-bonus-title{
     background: #db263a;
-    width: 450px;
+    /*width: 450px;*/
     margin: 50px auto 20px auto;
     color: #fff;
     padding: 15px 15px;
     text-align: center;
     text-transform: uppercase;
 }
-.wow-bonus img{
-    display: inline-block;
+.wow-bonus-img{
+    width: 400px;
     float: left;
-    width: 33%;
+    margin-right: 30px;
+}
+.wow-bonus-content{
+    display: block;
+    height: 400px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #333333;
+    line-height: 30px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.footer .phones {
+    float: right;
+    text-align: right;
+    margin-right: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer {
+    background: url(../img/foot_bg.jpg) center center repeat;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+.footer .copy{
+    color: #fff;
+    line-height: 45px;
+}
+.col-md-5{
+    display: inline-block;
+    margin-left: 160px;
+}
+.col-md-7{
+    display: inline-block;
+    width: 100%;
+}
+.footer .take-call {
+    width: 186px;
+    height: 44px;
+    border: 2px solid white;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    background: none;
+    margin-bottom: 10px;
+    float: right;
+    cursor: pointer;
+}
+.col-md-5 p{
+    line-height: 45px;
+}
+.Order{
+    text-align: center;
+    position: relative;
+    top: -100px;
+}
+.Order p{
+    font-size: 25px;
+    font-weight:bold;
+    color: #db263a;
+    text-transform: uppercase;
+}
+.Order span{
+    font-size: 25px;
+    color: #333;
+    font-weight:bold;
+}
+.form {
+    background: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    color: #333;
+    position: relative;
+    top: -92px;
+}
+.form .p1 {
+    font-weight: normal;
+    padding: 0 20px;
+    line-height: 30px;
+    font-size: 18px;
+}
+.form .input-group {
+    width: 400px;
+    margin: 0 auto 10px auto;
+
+}
+.form .input-group {
+    vertical-align: top;
+    position: relative;
+}
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+.form .name:before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 20px;
+    background: url(../img/sprite1.png) 0 0 no-repeat;
+    left: 17px;
+    top: 17px;
+    z-index: 5;
+}
+.form .input-group input {
+    width: 400px;
+    border: 1px solid #e1e1e1;
+    height: 50px;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+.form .input-group input[type="submit"]{
+    padding-left: 0;
+    font-size: 13px!important;
+}
+.form .email:before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 20px;
+    background: url(../img/sprite1.png) 0 -19px no-repeat;
+    left: 17px;
+    top: 17px;
+    z-index: 5;
+}
+.form .sub {
+    width: 300px;
+    background: #f7941e;
+    text-transform: uppercase;
+    font-size: 18px !important;
+    font-weight: bold;
+    padding: 0 !important;
+    color: #fff;
+}
+.info-22 {
+    opacity: 1;
+    line-height: 30px;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
 }
