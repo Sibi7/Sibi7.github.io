@@ -105,6 +105,9 @@ body{
     padding: 0 10px;
     font-weight: bold;
 }
+.format-system a{
+    text-decoration: none;
+}
 .format-system h1{
     background: #db263a;
     /*width: 450px;*/
