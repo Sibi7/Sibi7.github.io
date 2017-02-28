@@ -13,9 +13,9 @@
     <header class="header">
         <h1>ПОЗДРАВЛЯЮ!</h1>
         <p>
-            Доступ к тесту придет на Ваш email в течении нескольких минут. <br>
-            А пока… <br>
-            ИЗУЧИТЕ все, что написано на этой странице и ответьте на ВОПРОС:
+            Доступ к тесту придет на Ваш email в течение нескольких минут. <br><br><br>
+            А пока… <br><br><br>
+            ИЗУЧИТЕ все, что написано на этой странице, и ответьте на ВОПРОС:
         </p>
     </header>
     <div class="content">
@@ -37,7 +37,7 @@
     </div>
     <div class="books-algorithm">
         <p class="books-title">
-            Пошаговый алгоритм методики «4 СЕЗОНА ПРИЗВАНИЯ» - <br>
+            Пошаговый алгоритм методики «4 СЕЗОНА ПРИЗВАНИЯ» -<br>
             авторской программы ювелира талантов Татьяны Лариной
         </p>
         <div class="books-wrapper">
@@ -65,13 +65,16 @@
         </div>
     </div>
     <div class="format-system">
+        <a name="dostup"></a>
         <h1>ФОРМАТ СИСТЕМЫ</h1>
+        <br>
         <p>
-            200 страниц в pdf. <br>
+            200 страниц в PDF <strong>[электронная версия]</strong> <br>
             Сможете постепенно прорабатывать по 1 практике, с каждым шагом все глубже <br> исследуя и все больше понимая
             самих себя.</p>
         <h1 class="title-1">СПЕЦИАЛЬНАЯ СТОИМОСТЬ</h1>
-        <h2>«БОЛЬШОГО УЧЕБНИКА МАСТЕРА»</h2>
+
+        <h2>«БОЛЬШОЙ УЧЕБНИК МАСТЕРА»</h2>
         <p>
             (при бронировании заказа сегодня):</p>
         <div class="timer">
@@ -94,9 +97,9 @@
             </div>
         </div>
         <div class="price">
-            <p><span>4$</span> [реальная стоимость 20$]</p>
+            <p><span>4$</span> [обычная стоимость 20$]</p>
             <a href="#dostypp">
-                <button>[Заказать учебник]</button>
+                <button>Заказать учебник</button>
             </a>
         </div>
     </div>
@@ -128,11 +131,14 @@
             <div class="input-group email">
                 <input name="email" type="email" placeholder="Ваш основной email" class="form-control">
             </div>
+            <div class="input-group phone">
+                <input name="custom_mobile_phone" type="text" placeholder="Ваш телефон в межд. формате" class="form-control">
+            </div>
             <input type="hidden" name="campaign_token" value="pblId">
             <input type="hidden" name="thankyou_url" value="http://pintosevich.com/megatreningsuccess">
             <input type="hidden" name="forward_data" value="">
             <div class="input-group">
-                <input type="submit" class="sub" value="[  Хочу учебник с 80%-ной скидкой и бонусом  ]">
+                <input type="submit" class="sub" value="Хочу учебник с 80%-ной скидкой и бонусом">
             </div>
             <div class="timer">
                 <div class="timer-area">
@@ -163,7 +169,7 @@
         <div class="col-md-7">
             <p class="copy"> © 2017 | Татьяна Ларина - “Быстрый Розыск Личностного Призвания” | Все права защищены.
                 <a href="#dostup">
-                    <button class="take-call btnss" type="button">ПОЛУЧИТЬ ДОСТУП</button>
+                    <button class="take-call btnss">ПОЛУЧИТЬ ДОСТУП</button>
                 </a>
                 <span class="ua phones"><span>mail@otrada.me</span></span>
 
@@ -172,11 +178,9 @@
     </div>
 </footer>
 </body>
-<script src="js/jquery-2.2.4.min.js"></script>
-<script src="js/countdown.js"></script>
-<script src="js/lightbox.min.js"></script>
-<script>
 
+<script src="js/jquery-2.2.4.min.js"></script>
+<script>
     $(document).ready(function () {
 
         var d = new Date();
@@ -194,12 +198,12 @@
         month[10] = "November";
         month[11] = "December";
         var mon = month[d.getMonth()];
-        var day = d.getDate();
+        var day = d.getDate() + 1;
         var year = d.getFullYear();
         var t = d.toLocaleTimeString();
 
         var timerBeforeSplit = t.split(':');
-        var timerBeforeMinut = parseInt(timerBeforeSplit[1]) + 24;
+        var timerBeforeMinut = parseInt(timerBeforeSplit[1]);
 
         if (timerBeforeMinut > 59) {
             var h = parseInt(timerBeforeSplit[0]) + 1;
@@ -232,6 +236,7 @@
                 // callback function
             });
     });
-
 </script>
+<script src="js/countdown.js"></script>
+<script src="js/lightbox.min.js"></script>
 </html>
