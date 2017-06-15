@@ -182,10 +182,10 @@ $(document).ready(function () {
           url: '/mail.php',
           data: formData,
           success: function() {
-            $('#form-submit-errors').text("Success!");
+            $('#form-submit-errors').text("Отправлено!");
           },
           error: function() {
-            $('#form-submit-errors').text("Something went wrong...");
+            $('#form-submit-errors').text("Вы не заполнили обязательные поля");
           }
         });
 

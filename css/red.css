@@ -10,7 +10,7 @@
   height: 0px;
 }
 .menu__wrapper {
-  color: #ffffff;
+  color: #343434;
   transition: all 0.3s;
 }
 .menu__wrapper.nav-fixed--is-active {
@@ -189,7 +189,7 @@
   background-repeat: no-repeat;
   padding-top: 100px;
   padding-bottom: 90px;
-  background-image: url(../img/bg.jpg);
+  background-image: url(../img/bg-2.jpg);
   background-size: cover;
 }
 @media (min-width: 768px) {
@@ -954,7 +954,7 @@
   font-size: 18px;
 }
 .btn {
-  border-width: 3px !important;
+  border-width: 1px !important;
   text-transform: uppercase;
   font-size: 15px !important;
   padding: 12px 48px !important;
