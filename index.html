@@ -43,12 +43,12 @@
     <div class="menu__wrap">
         <div class="menu__wrap_block">
             <img src="/img/logo-white.png" alt="logo" class="menu__logo">
-            <a href="#" class="menu__link">Главная</a>
-            <a href="#" class="menu__link">Услуги</a>
-            <a href="#" class="menu__link">Портфолио</a>
-            <a href="#" class="menu__link">Отзывы</a>
-            <a href="#" class="menu__link">Стоимость</a>
-            <a href="#" class="menu__link">Преимущества</a>
+            <a href="#top" class="menu__link navigation__link">Главная</a>
+            <a href="#services" class="menu__link navigation__link">Услуги</a>
+            <a href="#portfolio" class="menu__link navigation__link">Портфолио</a>
+            <a href="#reviews" class="menu__link navigation__link">Отзывы</a>
+            <a href="#prices" class="menu__link navigation__link">Стоимость</a>
+            <a href="#about" class="menu__link navigation__link">Преимущества</a>
             <button class="menu__close"></button>
         </div>
     </div>
@@ -118,7 +118,7 @@
 <!-- end header.html-->
 
 <!-- start about.html-->
-<section class="about">
+<section class="about" id="about">
     <div class="container">
         <div class="about__dots"></div>
         <h2 class="about__title">Почему мы <span>создаем лучшие <strong>Landing Page</strong> в Казахстане?</span></h2>
@@ -375,7 +375,7 @@
                 <span class="order__money_text--colored">Деньги,</span> которые Вы <span class="order__money_text--colored">теряете</span>
                 <span class="order__money_text--colored">без</span> продающего <span class="order__money_text--colored">Landing page</span>
             </span>
-            <span class="order__money_number">52 357 <span>т</span></span>
+            <span class="order__money_number">52 <span class="js-counter-money">357</span> <span class="order__money_number_tenge">т</span></span>
         </div>
     </div>
 </section>
@@ -585,12 +585,13 @@
 <!-- end clients.html-->
 
 <!-- start projects.html-->
-<section class="projects">
+<section class="projects" id="portfolio">
     <div class="container">
         <div class="projects__common">
             <h2 class="projects__title">Реализованные проекты</h2>
             <span class="projects__slider_pagination-info"><strong></strong> / <span></span></span>
             <button class="projects__next"><img src="/img/icons/arrow-to-right.png" alt="arrow"></button>
+            <button class="projects__prev hidden"><img src="/img/icons/arrow-to-right.png" alt="arrow"></button>
         </div>
     </div>
 
@@ -626,7 +627,7 @@
                         </div>
                     </div>
                 </div>
-                <img src="/img/apple.png" alt="laptop" class="projects__tech">
+                <img src="/img/proj1.png" alt="laptop" class="projects__tech">
                 <button class="projects__next  projects__next-mobile">Следующий клиент</button>
             </div>
         </div>
@@ -661,7 +662,42 @@
                         </div>
                     </div>
                 </div>
-                <img src="/img/apple.png" alt="laptop" class="projects__tech">
+                <img src="/img/proj2.png" alt="laptop" class="projects__tech">
+                <button class="projects__next projects__next-mobile">Следующий клиент</button>
+            </div>
+        </div>
+        <div class="projects__slide">
+            <div class="container">
+                <div class="projects__slide_info">
+                    <div class="projects__slide_head">
+                        <h3 class="projects__slide_title">Ип престиж</h3>
+                        <p class="projects__slide_subtitle">Обучение преподавателей</p>
+                    </div>
+                    <div class="projects__slide_body">
+                        <h4 class="projects__slide_body_title">Задача</h4>
+                        <p class="projects__slide_body_text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna.
+                        </p>
+                        <h4 class="projects__slide_body_title">Решение</h4>
+                        <p class="projects__slide_body_text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium
+                        </p>
+                        <h4 class="projects__slide_body_title">Достигнутый результат</h4>
+                        <p class="projects__slide_body_text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.
+                        </p>
+                    </div>
+                    <div class="projects__slide_footer">
+                        <h4 class="projects__slide_footer_title">Используемые технологии</h4>
+                        <div class="projects__slide_footer_icons">
+                            <img src="/img/icons/projects-icon-1.png" alt="technologies icon" class="projects__slide_footer_icon">
+                            <img src="/img/icons/projects-icon-2.png" alt="technologies icon" class="projects__slide_footer_icon">
+                            <img src="/img/icons/projects-icon-3.png" alt="technologies icon" class="projects__slide_footer_icon">
+                            <img src="/img/icons/projects-icon-4.png" alt="technologies icon" class="projects__slide_footer_icon">
+                        </div>
+                    </div>
+                </div>
+                <img src="/img/proj3.png" alt="laptop" class="projects__tech">
                 <button class="projects__next projects__next-mobile">Следующий клиент</button>
             </div>
         </div>
@@ -671,7 +707,7 @@
 <!-- end projects.html-->
 
 <!-- start reviews.html-->
-<section class="reviews">
+<section class="reviews" id="reviews">
     <div class="container">
         <h2 class="reviews__title">Отзывы</h2>
         <h3 class="reviews__subtitle">Наших постоянных клиентов</h3>
@@ -743,15 +779,25 @@
                 </p>
             </div>
         </div>
+        <div class="reviews__actions">
+            <button class="reviews__prev"><img src="/img/icons/arrow-to-right-grey.png" alt="arrow"></button>
+            <span class="reviews__counter">
+                <strong class="reviews__current"></strong>
+                 /
+                <span class="reviews__amount"></span>
+            </span>
+            <button class="reviews__next"><img src="/img/icons/arrow-to-right-grey.png" alt="arrow"></button>
+        </div>
         <button class="reviews__btn">Оставить отзыв</button>
     </div>
     <div class="reviews__dots"></div>
     <div class="reviews__dots right"></div>
 </section>
+
 <!-- end reviews.html-->
 
 <!-- start сost-services.html-->
-<section class="cost-services">
+<section class="cost-services" id="prices">
     <div class="container">
         <div class="cost-services__header">
             <h2 class="cost-services__title">Стоимость услуг</h2>
@@ -779,7 +825,7 @@
                         <li>Продающие триггеры</li>
                         <li>Анализ ниши</li>
                     </ul>
-                    <p class="cost-services__price">249 999 <span>т</span></p>
+                    <p class="cost-services__price">249 999 <span class="tenge"></span></p>
                     <a href="#" class="cost-services__order">Заказать</a>
                 </div>
                 <div class="cost-services__item">
@@ -794,7 +840,7 @@
                         <li>Продающие триггеры</li>
                         <li>Анализ ниши</li>
                     </ul>
-                    <p class="cost-services__price">249 999 <span>т</span></p>
+                    <p class="cost-services__price">249 999 <span class="tenge"></span></p>
                     <a href="#" class="cost-services__order">Заказать</a>
                 </div>
                 <div class="cost-services__item">
@@ -809,7 +855,7 @@
                         <li>Продающие триггеры</li>
                         <li>Анализ ниши</li>
                     </ul>
-                    <p class="cost-services__price">249 999 <span>т</span></p>
+                    <p class="cost-services__price">249 999 <span class="tenge"></span></p>
                     <a href="#" class="cost-services__order">Заказать</a>
                 </div>
                 <div class="cost-services__item">
@@ -824,7 +870,7 @@
                         <li>Продающие триггеры</li>
                         <li>Анализ ниши</li>
                     </ul>
-                    <p class="cost-services__price">249 999 <span>т</span></p>
+                    <p class="cost-services__price">249 999 <span class="tenge"></span></p>
                     <a href="#" class="cost-services__order">Заказать</a>
                 </div>
             </div>
@@ -841,7 +887,7 @@
                         <li>Продающие триггеры</li>
                         <li>Анализ ниши</li>
                     </ul>
-                    <p class="cost-services__price">249 999 <span>т</span></p>
+                    <p class="cost-services__price">249 999 <span class="tenge"></span></p>
                     <a href="#" class="cost-services__order">Заказать</a>
                 </div>
                 <div class="cost-services__item">
@@ -856,7 +902,7 @@
                         <li>Продающие триггеры</li>
                         <li>Анализ ниши</li>
                     </ul>
-                    <p class="cost-services__price">249 999 <span>т</span></p>
+                    <p class="cost-services__price">249 999 <span class="tenge"></span></p>
                     <a href="#" class="cost-services__order">Заказать</a>
                 </div>
                 <div class="cost-services__item">
@@ -871,7 +917,7 @@
                         <li>Продающие триггеры</li>
                         <li>Анализ ниши</li>
                     </ul>
-                    <p class="cost-services__price">249 999 <span>т</span></p>
+                    <p class="cost-services__price">249 999 <span class="tenge"></span></p>
                     <a href="#" class="cost-services__order">Заказать</a>
                 </div>
                 <div class="cost-services__item">
@@ -886,7 +932,7 @@
                         <li>Продающие триггеры</li>
                         <li>Анализ ниши</li>
                     </ul>
-                    <p class="cost-services__price">249 999 <span>т</span></p>
+                    <p class="cost-services__price">249 999 <i class="tenge"></i></p>
                     <a href="#" class="cost-services__order">Заказать</a>
                 </div>
             </div>
@@ -898,6 +944,7 @@
     <div class="cost-services__dots"></div>
     <div class="cost-services__dots right"></div>
 </section>
+
 <!-- end сost-services.html-->
 
 <!-- start order-2.html-->
@@ -905,7 +952,7 @@
     <div class="container">
         <div class="order-2__wrap">
             <h1 class="order-2__title">Возможно вы искали <span>лендинг</span>? </h1>
-            <button class="order-2__button">Тогда вам сюда</button>
+            <button class="order-2__button open-modal-btn" data-modal="request">Тогда вам сюда</button>
         </div>
         <div class="order-2__img-middle"></div>
     </div>
@@ -919,8 +966,44 @@
     <div class="container">
         <h2 class="gifts__title">Вы любите получать подарки?</h2>
         <h3 class="gifts__subtitle">а мы любим их делать!</h3>
+        <p class="gifts__description">Закажите лучший на рынке Landing Page и <strong>получите гарантированные бонусы:</strong></p>
+
+        <div class="gifts__list">
+            <figure class="gifts__item">
+                <img src="/img/1.png" alt="gift">
+                <figcaption><strong>Домен в зоне .kz</strong> сроком на 1 год</figcaption>
+            </figure>
+            <figure class="gifts__item">
+                <img src="/img/2.png" alt="gift">
+                <figcaption><strong>Надежный хостинг</strong> сроком на 1 год</figcaption>
+            </figure>
+            <figure class="gifts__item">
+                <img src="/img/3.png" alt="gift">
+                <figcaption><strong>Настройка контекстной рекламы</strong></figcaption>
+            </figure>
+            <figure class="gifts__item">
+                <img src="/img/4.png" alt="gift">
+                <figcaption><strong>Техподдержка </strong>сроком на 1 месяц</figcaption>
+            </figure>
+        </div>
+
     </div>
+    <form class="gifts__form">
+        <div class="container">
+            <label><input type="text" placeholder="Ваше имя"></label>
+            <label><input type="text" placeholder="E-mail"></label>
+            <label><input type="text" placeholder="Номер телефона"></label>
+            <button class="gifts__submit">Заказать</button>
+            <span class="gifts__terms">
+                Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с
+                <a href="#">Пользовательским соглашением</a>
+            </span>
+            <img src="/img/dots.png" alt="dots" class="gifts__dots">
+            <img src="/img/girl.png" alt="girl" class="gifts__girl">
+        </div>
+    </form>
 </section>
+
 <!-- end gifts.html-->
 
 <!-- start faq.html-->
@@ -975,7 +1058,7 @@
 <!-- end faq.html-->
 
 <!-- start additional-services.html-->
-<section class="add-services">
+<section class="add-services" id="services">
     <div class="container">
         <h2 class="add-services__title">А также</h2>
         <h2 class="add-services__subtitle">Мы можем помочь вам</h2>
@@ -1013,6 +1096,7 @@
         </figure>
     </div>
 </section>
+
 <!-- end additional-services.html-->
 
 <!-- start footer.html-->
@@ -1031,11 +1115,11 @@
         </div>
         <div class="footer__wrap">
             <nav class="footer__nav">
-                <a href="#" class="footer__nav_item">Услуги</a>
-                <a href="#" class="footer__nav_item">Портфолио</a>
-                <a href="#" class="footer__nav_item">Отзывы</a>
-                <a href="#" class="footer__nav_item">Стоимость</a>
-                <a href="#" class="footer__nav_item">Преимущества</a>
+                <a href="#services" class="footer__nav_item navigation__link">Услуги</a>
+                <a href="#portfolio" class="footer__nav_item navigation__link">Портфолио</a>
+                <a href="#reviews" class="footer__nav_item navigation__link">Отзывы</a>
+                <a href="#prices" class="footer__nav_item navigation__link">Стоимость</a>
+                <a href="#about" class="footer__nav_item navigation__link">Преимущества</a>
             </nav>
             <ul class="footer__items">
                 <li><a href="#" class="footer__nav_item">Услуги</a></li>
