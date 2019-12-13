@@ -1,0 +1,13 @@
+.clients{
+  &__title {
+    padding-top: rem(80);
+    padding-bottom: rem(67);
+    text-align: center;
+    font-weight: 400;
+    font-size: rem(36);
+    line-height: rem(40);
+    b{
+      font-family: "TTNormsExtraBold", sans-serif;
+    }
+  }
+}
