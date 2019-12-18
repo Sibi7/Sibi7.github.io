@@ -1,4 +1,5 @@
 .clients{
+  background: #f7f6f6;
   &__title {
     padding-top: rem(80);
     padding-bottom: rem(67);
@@ -8,6 +9,32 @@
     line-height: rem(40);
     b{
       font-family: "TTNormsExtraBold", sans-serif;
+    }
+  }
+  &__wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: rem(100);
+  }
+  &__logo{
+    position: relative;
+    width: rem(210);
+    height: rem(47);
+    margin-bottom: rem(50);
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      max-width: 100%;
+      object-fit: contain;
+      filter: grayscale(100%);
+      transition: 300ms ease;
+      &:hover{
+        filter: grayscale(0%);
+        transition: 300ms ease;
+      }
     }
   }
 }
