@@ -23,988 +23,816 @@
     <meta name="theme-color" content="#000">
     <!-- Custom Browsers Color End -->
 
-    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/styles.min.css">
 
 </head>
 
 <body>
 <div class="swipe-overlay"></div>
-
 <!-- end html_open.html-->
 
 <!-- start header.html-->
 <header class="header">
     <div class="container">
-
-<!-- start menu.html-->
-<nav class="menu">
-    <img src="/img/logo-white.png" alt="logo" class="menu__logo_mobile">
-    <div class="menu__wrap">
-        <div class="menu__wrap_block">
-            <img src="/img/logo-white.png" alt="logo" class="menu__logo">
-            <a href="#top" class="menu__link navigation__link">Главная</a>
-            <a href="#services" class="menu__link navigation__link">Услуги</a>
-            <a href="#portfolio" class="menu__link navigation__link">Портфолио</a>
-            <a href="#reviews" class="menu__link navigation__link">Отзывы</a>
-            <a href="#prices" class="menu__link navigation__link">Стоимость</a>
-            <a href="#about" class="menu__link navigation__link">Преимущества</a>
-            <button class="menu__close"></button>
-        </div>
-    </div>
-    <button class="menu__btn"><span></span></button>
-</nav>
-
-<!-- end menu.html-->
-
         <div class="header__contacts">
-            <span class="header__address">
-                Казахстан г.Алматы
-                <strong>Тимирязева 42 к 15/108 Офис 308</strong>
-            </span>
+            <div class="header__address">
+                Республика Казахстан, 050026
+                <span>г. Алматы, ул. Манаса, 12</span>
+                <a href="mailto:dart@r2d2.kz" class="mail">dart@r2d2.kz</a>
+            </div>
+            <a href="#" class="header__logo">
+                <img src="img/logo.png" class="logo" alt="logo">
+                <span>Сертифицированный интегратор <br>
+                    <img src="img/amocrm-logo.png" alt="amocrm-logo"> в Казахстане
+                 </span>
+            </a>
             <div class="header__phones">
-                <span class="header__phone">
-                    <img src="img/icons/phone.png" alt="phone">
-                    <span>+7 770 <strong>700 07 70</strong></span>
-                </span>
-                <span class="header__phone">
-                    <img src="img/icons/phone2.png" alt="phone">
-                    <span>+7 727 <strong>727  72 72</strong></span>
-                </span>
-                <button class="header__phones_btn open-modal-btn" data-modal="request">Заказать обратный звонок</button>
+                <div class="header__phones-wrap">
+                    <img src="img/icons/Icon_phone.png" alt="phone">
+                    <a href="tel:+77273470283">+7 727 347 02 83</a> <br>
+                    <a href="tel:+77273470283">+7 727 347 02 83</a>
+                </div>
+                <button class="feedback">Заказать обратный звонок</button>
             </div>
         </div>
-
-        <div class="header__title">
-            <h1>Разработка <strong>лучших landing page</strong> в Казахстане</h1>
-            <span>с конверсией <strong>от 10%</strong></span>
+        <div class="header__content-wrap">
+            <div class="header__content">
+                <h2 class="header__title">За 3 дня и <br> 68 000 тенге</h2>
+                <p class="header__desk">внедрим программу, которая значительно <br>
+                    <b> повлияет на рост</b> Ваших <b>продаж</b>
+                </p>
+                <div class="header__services">
+                    <div class="header__services-item">
+                        <img src="img/icons/h-1.png" alt="services">
+                        <h3>Увеличение продаж на 20%</h3>
+                        <p>За счет системной
+                            работы отдела продаж
+                            по клиентской базе</p>
+                    </div>
+                    <div class="header__services-item">
+                        <img src="img/icons/h-2.png" alt="services">
+                        <h3>Все клиенты как на ладони</h3>
+                        <p>На одном экране вы видите
+                            всех клиентов,  все сделки,
+                            и все будущие продажи</p>
+                    </div>
+                    <div class="header__services-item">
+                        <img src="img/icons/h-3.png" alt="services">
+                        <h3>Тотальный контроль менеджеров</h3>
+                        <p>Вы будете видеть все действия,
+                            которые совершает Ваш
+                            менеджер по продажам</p>
+                    </div>
+                </div>
+            </div>
+            <form action="#" class="header__form">
+                <h3 class="header__form-title">Оставьте заявку</h3>
+                <h4 class="header__form-subtitle">для подробной консультации</h4>
+                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Ваш телефон">
+                <input type="text" placeholder="Ваш e-mail">
+                <button type="submit">Оставить</button>
+                <p class="header__form-agreement">Нажимая на кнопку, вы даете согласие на обработку
+                    своих персональных данных и соглашаетесь <br>
+                    <a href="#">с Пользовательским соглашением</a></p>
+            </form>
         </div>
-
-        <form class="header__form">
-            <div class="header__form_text">
-                <span class="header__form_title">Оставьте <strong>заявку</strong></span>
-                <span class="header__form_description">и в ближайшее время наши специалисты свяжуться с вами</span>
-            </div>
-            <label><input type="text" placeholder="Ваше имя"></label>
-            <label><input type="tel" placeholder="Телефон"></label>
-            <label><input type="email" placeholder="E-mail"></label>
-            <button class="header__form_submit">Заказать</button>
-        </form>
-
-        <button class="header__order-btn open-modal-btn" data-modal="request">Оставить заявку</button>
-
-        <div class="header__items">
-            <div class="header__item">
-                <img class="header__item_img" src="img/icons/settings_a.png" alt='icon' />
-                <span class="header__item_title">Настройка рекламы <strong>бесплатно</strong></span>
-                <span class="header__item_desc">Эффективная реклама в Google Ads с гарантией целевых заявок</span>
-            </div>
-            <div class="header__item">
-                <img class="header__item_img" src="img/icons/Individual_design.png" alt='icon' />
-                <span class="header__item_title"><strong>Индивидуальный</strong> дизайн</span>
-                <span class="header__item_desc">Такой будет только у вас! Никаких шаблонов и готовых решений, все индивидуально</span>
-            </div>
-            <div class="header__item">
-                <img class="header__item_img" src="img/icons/responsive.png" alt='icon' />
-                <span class="header__item_title"><strong>Адаптивная</strong> верстка</span>
-                <span class="header__item_desc">Готовый сайт будет адаптирован под все устройства - включая планшеты и смартфоны</span>
-            </div>
-        </div>
-
     </div>
 </header>
-<div class="overlay"></div>
-
 <!-- end header.html-->
 
-<!-- start about.html-->
-<section class="about" id="about">
+<!-- start questions.html-->
+<section class="questions">
     <div class="container">
-        <div class="about__dots"></div>
-        <h2 class="about__title">Почему мы <span>создаем лучшие <strong>Landing Page</strong> в Казахстане?</span></h2>
-        <p class="about__desc">Все просто - мы идем в ногу со временем и <strong>используем передовые технологии разработки проектов</strong> благодаря которым проекты создаются быстро и приносят максимальную пользу вашему бизнесу</p>
-        <div class="about__skills">
-            <div class="about__skills_block">
-                <h3 class="about__skills_title">Методологии ведения проектов</h3>
-                <div class="about__brands">
-                    <figure class="about__brand">
-                        <img src="img/methodologies/1.png" alt="brand">
-                        <figcaption>Scrum</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/methodologies/2.png" alt="brand">
-                        <figcaption>Kanban</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/methodologies/3.png" alt="brand">
-                        <figcaption>Waterfall</figcaption>
-                    </figure>
+        <h2 class="questions__title">Как часто вы <b>задаете себе </b>эти <b>вопросы</b>?</h2>
+    </div>
+    <div class="questions__content">
+        <div class="container">
+            <div class="questions__content-wrap">
+                <div class="questions__item">
+                    <img src="img/icons/q-1.png" alt="icon">
+                    <div class="questions__item-wrap">
+                        <h4>Где новые заявки?</h4>
+                        <p>
+                            И почему телефонных разговоров
+                            много, но ничего не продаётся ?
+                        </p>
+                    </div>
+                </div>
+                <div class="questions__item">
+                    <img src="img/icons/q-6.png" alt="icon">
+                    <div class="questions__item-wrap">
+                        <h4>Куда исчезают клиенты?</h4>
+                        <p>
+                            Куда уходят постоянные клиенты
+                            и как вернуть их обратно?
+                        </p>
+                    </div>
+                </div>
+                <div class="questions__item">
+                    <img src="img/icons/q-2.png" alt="icon">
+                    <div class="questions__item-wrap">
+                        <h4>Чем заняты менеджеры?</h4>
+                        <p>
+                            И почему все сотрудники "звёзды",
+                            но на рост продаж это не влияет?
+                        </p>
+                    </div>
+                </div>
+                <div class="questions__item">
+                    <img src="img/icons/q-7.png" alt="icon">
+                    <div class="questions__item-wrap">
+                        <h4>Что с продажами?</h4>
+                        <p>
+                            Почему план продаж установлен,
+                            но его не выполняют?
+                        </p>
+                    </div>
+                </div>
+                <div class="questions__item">
+                    <img src="img/icons/q-3.png" alt="icon">
+                    <div class="questions__item-wrap">
+                        <h4>Что можно улучшить?</h4>
+                        <p>
+                            Как и какие бизнес-процессы
+                            можно и стоит улучшить?
+                        </p>
+                    </div>
+                </div>
+                <div class="questions__item">
+                    <img src="img/icons/q-8.png" alt="icon">
+                    <div class="questions__item-wrap">
+                        <h4>Как повысить управляемость?</h4>
+                        <p>
+                            Как управлять бизнесом
+                            на основе цифровой модели?
+                        </p>
+                    </div>
+                </div>
+                <div class="questions__item">
+                    <img src="img/icons/q-4.png" alt="icon">
+                    <div class="questions__item-wrap">
+                        <h4>Как снизить расходы на
+                            обслуживание клиентов?</h4>
+                        <p>
+                            Снижение расходов на
+                            привлечение и обслуживание
+                        </p>
+                    </div>
+                </div>
+                <div class="questions__item">
+                    <img src="img/icons/q-9.png" alt="icon">
+                    <div class="questions__item-wrap">
+                        <h4>Как уменьшить кол-во жалоб?</h4>
+                        <p>
+                            Уменьшение кол-ва возвратов,
+                            жалоб и претензий
+                        </p>
+                    </div>
+                </div>
+                <div class="questions__item">
+                    <img src="img/icons/q-5.png" alt="icon">
+                    <div class="questions__item-wrap">
+                        <h4>Как повысить продажи?</h4>
+                        <p>
+                            Увеличение кол-ва повторных
+                            продаж, допродаж, среднего чека
+                        </p>
+                    </div>
+                </div>
+                <div class="questions__item">
+                    <img src="img/icons/q-10.png" alt="icon">
+                    <div class="questions__item-wrap">
+                        <h4>Как снизить потери?</h4>
+                        <p>
+                            Как выявить и устранить слабые
+                            места в Вашей компании
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="about__skills_block">
-                <h3 class="about__skills_title">Таск менеджеры</h3>
-                <div class="about__brands">
-                    <figure class="about__brand">
-                        <img src="img/task-managers/1.png" alt="brand">
-                        <figcaption>Trello</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/task-managers/2.png" alt="brand">
-                        <figcaption>Worksection</figcaption>
-                    </figure>
-                </div>
+
+        </div>
+    </div>
+</section>
+<!-- end questions.html-->
+
+<!-- start function.html-->
+<section class="function">
+    <div class="container">
+        <h2 class="function__title"><b>AMOCRM готова решить</b> все эти и многие другие <br>
+            <b>проблемы</b> потому что обладает такими функциями как:</h2>
+        <div class="function__content-wrap">
+            <div class="function__item">
+                <img src="img/icons/f-1.png" alt="icon">
+                <h4>Простой интерфейс</h4>
+                <p>
+                    У amoCRM простой и понятный интерфейс,
+                    поэтому после внедрения менеджеры
+                    легко осваиваются и сразу же стартуют
+                </p>
             </div>
-            <div class="about__skills_block">
-                <h3 class="about__skills_title">Проектирование и прототипирование</h3>
-                <div class="about__brands">
-                    <figure class="about__brand">
-                        <img src="img/design-prototyping/1.png" alt="brand">
-                        <figcaption>Moqups</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/design-prototyping/2.png" alt="brand">
-                        <figcaption>Mockflow</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/design-prototyping/3.png" alt="brand">
-                        <figcaption>Marvelapp</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/design-prototyping/4.png" alt="brand">
-                        <figcaption>Mind-42</figcaption>
-                    </figure>
-                </div>
+            <div class="function__item">
+                <img src="img/icons/f-2.png" alt="icon">
+                <h4>Телефония</h4>
+                <p>
+                    Внедрение amoCRM включает интеграцию
+                    с любой телефоние на Ваш выбор: Binotel, Phonet,
+                    LiraX, OnlinePBX, Zadarma, Asterisk и иными.
+                </p>
             </div>
-            <div class="about__skills_block">
-                <h3 class="about__skills_title">Дизайн</h3>
-                <div class="about__brands">
-                    <figure class="about__brand">
-                        <img src="img/design/1.png" alt="brand">
-                        <figcaption>Adobe Photoshop</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/design/2.png" alt="brand">
-                        <figcaption>Sketch</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/design/3.png" alt="brand">
-                        <figcaption>Adobe Illustrator</figcaption>
-                    </figure>
-                </div>
+            <div class="function__item">
+                <img src="img/icons/f-3.png" alt="icon">
+                <h4>Email-рассылки</h4>
+                <p>
+                    Интеграция amoCRM c почтовыми
+                    сервисами: MailChimp, GetResponce,
+                    SendPulse, UniSender и иными
+                </p>
             </div>
-            <div class="about__skills_block">
-                <h3 class="about__skills_title">Бэкэнд</h3>
-                <div class="about__brands">
-                    <figure class="about__brand">
-                        <img src="img/backend/1.png" alt="brand">
-                        <figcaption>Yii2</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/backend/2.png" alt="brand">
-                        <figcaption>Laravel</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/backend/3.png" alt="brand">
-                        <figcaption>Nginx</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/backend/4.png" alt="brand">
-                        <figcaption>Redis</figcaption>
-                    </figure>
-                </div>
+            <div class="function__item">
+                <img src="img/icons/f-4.png" alt="icon">
+                <h4>Мессенджеры и чаты</h4>
+                <p>
+                    Общайтесь с клиентами через
+                    мессенджеры и чаты: WhatsApp, Instagram,
+                    Телеграмм, Facebook, Vk, Viber
+                </p>
             </div>
-            <div class="about__skills_block">
-                <h3 class="about__skills_title">Фронтенд</h3>
-                <div class="about__brands">
-                    <figure class="about__brand">
-                        <img src="img/frontend/1.png" alt="brand">
-                        <figcaption>HTML-5</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/frontend/2.png" alt="brand">
-                        <figcaption>CSS-3</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/frontend/4.png" alt="brand">
-                        <figcaption>Zeplin</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/frontend/3.png" alt="brand">
-                        <figcaption>Bootstrap-4</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/frontend/5.png" alt="brand">
-                        <figcaption>Gulp</figcaption>
-                    </figure>
-                </div>
+            <div class="function__item">
+                <img src="img/icons/f-5.png" alt="icon">
+                <h4>Аналитика</h4>
+                <p>
+                    В amoCRM есть возможность строить
+                    аналитические отчёты по деятельности
+                    предприятия. Доступен отчёт по
+                    прогнозу будующих продаж
+                </p>
             </div>
-            <div class="about__skills_block">
-                <h3 class="about__skills_title">Системы контроля версий</h3>
-                <div class="about__brands">
-                    <figure class="about__brand">
-                        <img src="img/git/1.png" alt="brand">
-                        <figcaption>Git</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/git/2.png" alt="brand">
-                        <figcaption>Bitbucket</figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="about__skills_block">
-                <h3 class="about__skills_title">Базы данных</h3>
-                <div class="about__brands">
-                    <figure class="about__brand">
-                        <img src="img/base/1.png" alt="brand">
-                        <figcaption>MySQL</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/base/2.png" alt="brand">
-                        <figcaption>Mongo DB</figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="about__skills_block">
-                <h3 class="about__skills_title">CMS</h3>
-                <div class="about__brands">
-                    <figure class="about__brand">
-                        <img src="img/cms/1.png" alt="brand">
-                        <figcaption>1c- битрикс</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/cms/2.png" alt="brand">
-                        <figcaption>WordPress</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/cms/3.png" alt="brand">
-                        <figcaption>MODx</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/cms/4.png" alt="brand">
-                        <figcaption>Open Card</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/cms/5.png" alt="brand">
-                        <figcaption>by Rock-Marketing</figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="about__skills_block">
-                <h3 class="about__skills_title">Интеграции</h3>
-                <div class="about__brands">
-                    <figure class="about__brand">
-                        <img src="img/integration/1.png" alt="brand">
-                        <figcaption>1c-Бухгалтерия</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/integration/2.png" alt="brand">
-                        <figcaption>AMOCRM</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/integration/3.png" alt="brand">
-                        <figcaption>WhatsApp</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/integration/4.png" alt="brand">
-                        <figcaption>Telegram</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/integration/5.png" alt="brand">
-                        <figcaption>Google-таблицы</figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="about__skills_block">
-                <h3 class="about__skills_title">Платежные системы</h3>
-                <div class="about__brands">
-                    <figure class="about__brand">
-                        <img src="img/payment-systems/1.png" alt="brand">
-                        <figcaption>PayBox</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/payment-systems/2.png" alt="brand">
-                        <figcaption>CloudPayments</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/payment-systems/3.png" alt="brand">
-                        <figcaption>QIWI</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/payment-systems/4.png" alt="brand">
-                        <figcaption>WebMoney</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/payment-systems/5.png" alt="brand">
-                        <figcaption>Яндекс.Деньги</figcaption>
-                    </figure>
-                    <figure class="about__brand">
-                        <img src="img/payment-systems/6.png" alt="brand">
-                        <figcaption>PayPal</figcaption>
-                    </figure>
-                </div>
+            <div class="function__item">
+                <img src="img/icons/f-6.png" alt="icon">
+                <h4>Автоматическая воронка продаж</h4>
+                <p>
+                    Мы поможем настроить автоматические
+                    действия. Автоматические касания на базе
+                    amoCRM: система сама отправит email,
+                    SMS, включит рекламу и прочее
+                </p>
             </div>
         </div>
     </div>
 </section>
+<!-- end function.html-->
 
-<!-- end about.html-->
-
-<!-- start order.html-->
-<section class="order">
+<!-- start app_business.html-->
+<div class="app-business">
     <div class="container">
-        <img src="/img/clock-dots.png" alt="clock" class="order__clock">
-        <h2 class="order__title">Заказать</h2>
-        <p class="order__subtitle">высокотехнологичный и продающий <strong>Landing Page</strong></p>
-        <p class="order__description"><strong>Прямо сейчас сделайте первый шаг</strong> к увеличению продаж и имиджу вашей компании</p>
-
-        <form class="order__form">
-            <label><input type="text" placeholder="Ваше имя"></label>
-            <label><input type="email" placeholder="E-mail"></label>
-            <label><input type="tel" placeholder="Номер телефона"></label>
-            <button class="order__form_submit">Заказать</button>
-            <span class="order__form_terms">
-                Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с
-                <a href="#">Пользовательским соглашением</a>
-            </span>
-        </form>
-
-        <img src="/img/clock-dots.png" alt="clock" class="order__clock-mobile">
-
-        <div class="order__money">
-            <span class="order__money_text">
-                <span class="order__money_text--colored">Деньги,</span> которые Вы <span class="order__money_text--colored">теряете</span>
-                <span class="order__money_text--colored">без</span> продающего <span class="order__money_text--colored">Landing page</span>
-            </span>
-            <span class="order__money_number">52 <span class="js-counter-money">357</span> <span class="order__money_number_tenge">т</span></span>
+        <h2 class="app-business__title">На сколько это применимо к Вашему бизнесу? <br>
+            Это <b>точно применимо к Вашему бизнесу</b>, если Вы:</h2>
+        <div class="app-business__wrap">
+        <div class="app-business__item">
+            <img src="img/icons/a-1.png" alt="icons">
+            <h3>Торговые компании</h3>
+        </div>
+        <div class="app-business__item">
+            <img src="img/icons/a-2.png" alt="icons">
+            <h3>Event - Агентства</h3>
+        </div>
+        <div class="app-business__item">
+            <img src="img/icons/a-3.png" alt="icons">
+            <h3>Брокеры</h3>
+        </div>
+        <div class="app-business__item">
+            <img src="img/icons/a-4.png" alt="icons">
+            <h3>Web - студии</h3>
+        </div>
+        <div class="app-business__item">
+            <img src="img/icons/a-5.png" alt="icons">
+            <h3>Тренинговые
+                центры</h3>
         </div>
     </div>
-</section>
-
-<!-- end order.html-->
-
-<!-- start stages.html-->
-<section class="stages">
-    <div class="container">
-        <h2 class="stages__title">Этапы работ</h2>
-        <div class="stages__list">
-            <div class="stages__item">
-                <img src="/img/stages/stages-1.png" alt="stage icon" class="stages__item_icon">
-                <div class="stages__item_wrap">
-                    <h3 class="stages__item_title">Заполнение брифа</h3>
-                    <p class="stages__item_desc">Знакомство с вашим бизнесом,выявление потребности, выработка необходимого решения</p>
-                </div>
+        <div class="app-business__wrap">
+            <div class="app-business__item">
+                <img src="img/icons/a-6.png" alt="icons">
+                <h3>Микрокредитование</h3>
             </div>
-            <div class="stages__item">
-                <img src="/img/stages/stages-2.png" alt="stage icon" class="stages__item_icon">
-                <div class="stages__item_wrap">
-                    <h3 class="stages__item_title">Подписание договора</h3>
-                    <p class="stages__item_desc">Создание черно-белого макета сайта, для полного понятия о том как будет выглядеть будущий сайт</p>
-                </div>
+            <div class="app-business__item">
+                <img src="img/icons/a-7.png" alt="icons">
+                <h3>Лизинговые
+                    компании</h3>
             </div>
-            <div class="stages__item">
-                <img src="/img/stages/stages-3.png" alt="stage icon" class="stages__item_icon">
-                <div class="stages__item_wrap">
-                    <h3 class="stages__item_title">Оплата счета</h3>
-                    <p class="stages__item_desc">Проанализируем всех Казахстанских конкурентов, а так же из стран СНГ</p>
-                </div>
+            <div class="app-business__item">
+                <img src="img/icons/a-8.png" alt="icons">
+                <h3>Рекламные
+                    агентства</h3>
             </div>
-            <div class="stages__item">
-                <img src="/img/stages/stages-6.png" alt="stage icon" class="stages__item_icon">
-                <div class="stages__item_wrap">
-                    <h3 class="stages__item_title">Разработка дизайна</h3>
-                    <p class="stages__item_desc">Знакомство с вашим бизнесом,выявление потребности, выработка необходимого решения</p>
-                </div>
+            <div class="app-business__item">
+                <img src="img/icons/a-9.png" alt="icons">
+                <h3>Страховой бизнес</h3>
             </div>
-            <div class="stages__item">
-                <img src="/img/stages/stages-5.png" alt="stage icon" class="stages__item_icon">
-                <div class="stages__item_wrap">
-                    <h3 class="stages__item_title">Копирайтинг</h3>
-                    <p class="stages__item_desc">Создание черно-белого макета сайта, для полного понятия о том как будет выглядеть будущий сайт</p>
-                </div>
+        </div>
+        <div class="app-business__wrap">
+            <div class="app-business__item">
+                <img src="img/icons/a-10.png" alt="icons">
+                <h3>Юридические <br>
+                    услуги</h3>
             </div>
-            <div class="stages__item">
-                <img src="/img/stages/stages-3.png" alt="stage icon" class="stages__item_icon">
-                <div class="stages__item_wrap">
-                    <h3 class="stages__item_title">Разработка прототипа</h3>
-                    <p class="stages__item_desc">Проанализируем всех Казахстанских конкурентов, а так же из стран СНГ</p>
-                </div>
+            <div class="app-business__item">
+                <img src="img/icons/a-11.png" alt="icons">
+                <h3>Консалтинг</h3>
             </div>
-            <div class="stages__item">
-                <img src="/img/stages/stages-7.png" alt="stage icon" class="stages__item_icon">
-                <div class="stages__item_wrap">
-                    <h3 class="stages__item_title">Адаптивная верстка</h3>
-                    <p class="stages__item_desc">Знакомство с вашим бизнесом,выявление потребности, выработка необходимого решения</p>
-                </div>
+            <div class="app-business__item">
+                <img src="img/icons/a-12.png" alt="icons">
+                <h3>Интернет <br>
+                    магазины</h3>
             </div>
-            <div class="stages__item">
-                <img src="/img/stages/stages-8.png" alt="stage icon" class="stages__item_icon">
-                <div class="stages__item_wrap">
-                    <h3 class="stages__item_title">Программирование</h3>
-                    <p class="stages__item_desc">Создание черно-белого макета сайта, для полного понятия о том как будет выглядеть будущий сайт</p>
-                </div>
+            <div class="app-business__item">
+                <img src="img/icons/a-13.png" alt="icons">
+                <h3>Строительные <br>
+                    компании</h3>
             </div>
-            <div class="stages__item">
-                <img src="/img/stages/stages-9.png" alt="stage icon" class="stages__item_icon">
-                <div class="stages__item_wrap">
-                    <h3 class="stages__item_title">Наполнение сайта</h3>
-                    <p class="stages__item_desc">Проанализируем всех Казахстанских конкурентов, а так же из стран СНГ</p>
-                </div>
-            </div>
-            <div class="stages__item">
-                <img src="/img/stages/stages-10.png" alt="stage icon" class="stages__item_icon">
-                <div class="stages__item_wrap">
-                    <h3 class="stages__item_title">Тестирование и сдача проекта</h3>
-                    <p class="stages__item_desc">Проанализируем всех Казахстанских конкурентов, а так же из стран СНГ</p>
-                </div>
+            <div class="app-business__item">
+                <img src="img/icons/a-14.png" alt="icons">
+                <h3>Турагентства</h3>
             </div>
         </div>
     </div>
-</section>
+</div>
+<!-- end app_business.html-->
 
-<!-- end stages.html-->
-
-<!-- start rock.html-->
-<section class="rock">
+<!-- start feedback.html-->
+<section class="s-feedback">
     <div class="container">
-        <img src="/img/lighting.png" alt="lighting" class="rock__lighting">
-        <h2 class="rock__title">Мы - Rock-Marketing</h2>
-        <p class="rock__subtitle">Digital-Агентство <strong>из Алматы</strong></p>
-        <p class="rock__desc">Работаем <strong>с 2012 года</strong> на рынках Казахстана, России и Украины</p>
-        <div class="rock__items">
-            <div class="rock__item">
-                <img src="/img/800.png" alt="800+">
-                <h3>Выполненных проектов</h3>
-            </div>
-            <div class="rock__item">
-                <img src="/img/7.png" alt="7">
-                <h3>Лет опыта</h3>
-            </div>
-            <div class="rock__item">
-                <img src="/img/540.png" alt="540+">
-                <h3>Положительных отзывов</h3>
-            </div>
+        <div class="s-feedback__wrap">
+            <h2>Не нашли свой бизнес?</h2>
+            <button>Обратитесь к нашему консультанту</button>
+            <span>и мы <b>подберем Вам другую</b> CRM систему</span>
         </div>
     </div>
 </section>
+<!-- end feedback.html-->
 
-<!-- end rock.html-->
-
-<!-- start guarantee.html-->
-<section class="guarantee">
-    <div class="container">
-        <div class="guarantee__wrap">
-            <h2 class="guarantee__title">Мы гарантируем</h2>
-            <ul class="guarantee__list">
-                <li class="guarantee__item">
-                    <img src="/img/guarantee-checkmark.png" alt="checkmark" class="guarantee__checkmark">
-                    <span class="guarantee__item_text"><strong>Справедливую</strong> стоимость услуг;</span>
-                </li>
-                <li class="guarantee__item">
-                    <img src="/img/guarantee-checkmark.png" alt="checkmark" class="guarantee__checkmark">
-                    <span class="guarantee__item_text">Выполнение проекта <strong>точно в срок</strong>;</span>
-                </li>
-                <li class="guarantee__item">
-                    <img src="/img/guarantee-checkmark.png" alt="checkmark" class="guarantee__checkmark">
-                    <span class="guarantee__item_text"><strong>Фиксированный бюджет</strong> проекта, после его утверждения;</span>
-                </li>
-                <li class="guarantee__item">
-                    <img src="/img/guarantee-checkmark.png" alt="checkmark" class="guarantee__checkmark">
-                    <span class="guarantee__item_text"><strong>Прозрачность</strong> на всех этапах работ;</span>
-                </li>
-                <li class="guarantee__item">
-                    <img src="/img/guarantee-checkmark.png" alt="checkmark" class="guarantee__checkmark">
-                    <span class="guarantee__item_text">Заключение <strong>официального договора</strong> на выполнение всех услуг.</span>
-                </li>
-            </ul>
-        </div>
-        <form class="guarantee__form">
-            <div class="guarantee__dots"></div>
-            <h3 class="guarantee__form_title">Заказать <strong>landing page</strong></h3>
-            <p class="guarantee__form_desc">и в ближайшее время наши специалисты свяжуться с вами</p>
-            <label><input type="text" placeholder="Ваше имя"></label>
-            <label><input type="email" placeholder="E-mail"></label>
-            <label><input type="tel" placeholder="Номер телефона"></label>
-            <label><textarea placeholder="Особые пожелания"></textarea></label>
-            <span class="guarantee__form_terms">
-                Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с
-                <a href="#">Пользовательским соглашением</a>
-            </span>
-            <button class="guarantee__submit">Заказать</button>
-        </form>
-    </div>
+<!-- start resource-saving.html-->
+<section class="r-saving">
+    <h2 class="r-saving__title">
+        Как конкретно AMO CRM поможет именно Вам <br>
+        <b>сэкономить ресурсы и заработать больше</b>
+    </h2>
+    <article class="r-saving__item">
+        <figure>
+            <img src="img/r-1.png" alt="" />
+            <figcaption>Все еще ведете
+                клиентскую базу в Exel?
+                <b>Долго? Не удобно?</b></figcaption>
+        </figure>
+    </article>
+    <article class="r-saving__item">
+        <figure>
+            <img src="img/r-2.png" alt="" />
+            <figcaption>АМО СРМ ведет
+                всю <b>клиентскую базу в
+                    едином интерфейсе</b></figcaption>
+        </figure>
+    </article>
+    <article class="r-saving__item">
+        <figure>
+            <img src="img/r-3.png" alt="" />
+            <figcaption>Не знаешь чем
+                занят <b>менеджер
+                    в твое отсутствие?</b></figcaption>
+        </figure>
+    </article>
+    <article class="r-saving__item">
+        <figure>
+            <img src="img/r-4.png" alt="" />
+            <figcaption>Вы <b>можете наблюдать</b> <br>
+                за всеми действиями <br>
+                ваших менеджеров</figcaption>
+        </figure>
+    </article>
+    <article class="r-saving__item">
+        <figure>
+            <img src="img/r-5.png" alt="" />
+            <figcaption><b>Сложно удержать
+                внимание</b> на всех заявках?</figcaption>
+        </figure>
+    </article>
+    <article class="r-saving__item">
+        <figure>
+            <img src="img/r-6.png" alt="" />
+            <figcaption>АМО СРМ ведет
+                всю <b>клиентскую базу в
+                    едином интерфейсе</b></figcaption>
+        </figure>
+    </article>
 </section>
+<!-- end resource-saving.html-->
 
-<!-- end guarantee.html-->
+<!-- start amo-crm.html-->
+<section class="amocrm">
+    <img src="img/amocrm.png" alt="">
+    <h2 class="amocrm__title">AmoCRM <b>объединило</b> в себе все <b>популярные сервисы</b>,
+        которыми вы пользуетесь в одном окне</h2>
+</section>
+<!-- end amo-crm.html-->
 
 <!-- start clients.html-->
 <section class="clients">
     <div class="container">
-        <h2 class="clients__title">Клиенты</h2>
-        <p class="clients__subtitle">с которыми мы работаем</p>
-        <div class="clients__list clients--hidden">
-            <div class="clients__logo"><img src="/img/clients/client-1.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-2.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-3.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-4.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-5.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-6.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-7.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-8.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-9.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-10.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-11.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-12.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-13.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-14.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-15.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-16.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-17.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-18.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-19.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-20.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-21.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-22.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-23.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-24.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-25.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-26.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-27.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-28.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-29.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-30.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-31.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-32.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-33.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-34.png" alt="client logo"></div>
-            <div class="clients__logo"><img src="/img/clients/client-35.png" alt="client logo"></div>
+        <h2 class="clients__title"><b>Успешные клиенты</b>, которые уже пользуются АМОСRМ</h2>
+        <div class="clients__wrap">
+            <div class="clients__logo">
+                <img src="img/clients/1.png" alt="logo">
+            </div>
+            <div class="clients__logo">
+                <img src="img/clients/2.png" alt="logo">
+            </div>
+            <div class="clients__logo">
+                <img src="img/clients/3.png" alt="logo">
+            </div>
+            <div class="clients__logo">
+                <img src="img/clients/4.png" alt="logo">
+            </div>
+            <div class="clients__logo">
+                <img src="img/clients/5.png" alt="logo">
+            </div>
+
+            <div class="clients__logo">
+                <img src="img/clients/5.png" alt="logo">
+            </div>
+            <div class="clients__logo">
+                <img src="img/clients/4.png" alt="logo">
+            </div>
+            <div class="clients__logo">
+                <img src="img/clients/3.png" alt="logo">
+            </div>
+            <div class="clients__logo">
+                <img src="img/clients/2.png" alt="logo">
+            </div>
+            <div class="clients__logo">
+                <img src="img/clients/1.png" alt="logo">
+            </div>
+            <div class="clients__logo">
+                <img src="img/clients/1.png" alt="logo">
+            </div>
+            <div class="clients__logo">
+                <img src="img/clients/2.png" alt="logo">
+            </div>
+            <div class="clients__logo">
+                <img src="img/clients/3.png" alt="logo">
+            </div>
+            <div class="clients__logo">
+                <img src="img/clients/4.png" alt="logo">
+            </div>
+            <div class="clients__logo">
+                <img src="img/clients/5.png" alt="logo">
+            </div>
+
+            <div class="clients__logo">
+                <img src="img/clients/5.png" alt="logo">
+            </div>
+            <div class="clients__logo">
+                <img src="img/clients/4.png" alt="logo">
+            </div>
+            <div class="clients__logo">
+                <img src="img/clients/3.png" alt="logo">
+            </div>
+            <div class="clients__logo">
+                <img src="img/clients/2.png" alt="logo">
+            </div>
+            <div class="clients__logo">
+                <img src="img/clients/1.png" alt="logo">
+            </div>
         </div>
-        <button class="clients__show-more">Загрузить еще</button>
     </div>
 </section>
-
 <!-- end clients.html-->
 
-<!-- start projects.html-->
-<section class="projects" id="portfolio">
+<!-- start portfolio.html-->
+<section class="portfolio">
     <div class="container">
-        <div class="projects__common">
-            <h2 class="projects__title">Реализованные проекты</h2>
-            <span class="projects__slider_pagination-info"><strong></strong> / <span></span></span>
-            <button class="projects__next"><img src="/img/icons/arrow-to-right.png" alt="arrow"></button>
-            <button class="projects__prev hidden"><img src="/img/icons/arrow-to-right.png" alt="arrow"></button>
-        </div>
-    </div>
+        <h2 class="portfolio__title"><b>Реализованные</b> проекты</h2>
+        <div class="portfolio__wrap owl-carousel">
+            <div class="portfolio__item">
+               <div class="portfolio__item-left">
+                   <img src="img/p-1.png" alt="">
+                   <div class="portfolio__footer">
+                     <p>
+                         Roistat предоставляет развернутую статистику по звонкам и посещениям сайта и соотносит ее с результатами каждой сделки. В результате вы получаете расчет RO по каждому рекламному каналу.
+                     </p>
 
-    <div class="projects__slider">
-        <div class="projects__slide">
-            <div class="container">
-                <div class="projects__slide_info">
-                    <div class="projects__slide_head">
-                        <h3 class="projects__slide_title">Ип престиж</h3>
-                        <p class="projects__slide_subtitle">Обучение преподавателей</p>
+                      <p>
+                          ‍Совместно с amoCRM Roistat помог нашему клиенту сократить расходы на рекламу и увеличить прибыльность бизнеса.
+                      </p>
+                   </div>
+               </div>
+               <div class="portfolio__item-right">
+                  <div class="portfolio__item-header">
+                      <div>
+                          <h3>ИП Престиж</h3>
+                          <span>Обучение преподавателей</span>
+                      </div>
+                      <img src="img/p-logo.png" alt="logo">
+                  </div>
+                   <div class="portfolio__item-body">
+                       <h4>Проблема</h4>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute </p>
+                   </div>
+                   <div class="portfolio__item-body">
+                       <h4>Решение</h4>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute </p>
+                   </div>
+                   <div class="portfolio__plus">
+                       Объем продаж <span>+ 25%</span>
+                   </div>
+                   <div class="portfolio__plus">
+                       Увеличение конверсии <span>+ 30%</span>
+                   </div>
+                   <div class="portfolio__footer">
+                      <p>
+                          Roistat предоставляет развернутую статистику по звонкам и посещениям сайта и соотносит ее с результатами каждой сделки. В результате вы получаете расчет RO по каждому рекламному каналу.
+                      </p>
+
+                       <p>
+                           ‍Совместно с amoCRM Roistat помог нашему клиенту сократить расходы на рекламу и увеличить прибыльность бизнеса.
+                       </p>
+                   </div>
+               </div>
+                <div class="portfolio__bottom">
+                    <h5 class="portfolio__bottom-title">Сервисы До и после</h5>
+                    <div class="portfolio__bottom-content">
+                        <img src="img/services/1.png" alt="">
+                        <img src="img/services/2.png" alt="">
+                        <img src="img/services/3.png" alt="">
+                        <img src="img/services/4.png" alt="">
+                        <img src="img/services/5.png" alt="">
                     </div>
-                    <div class="projects__slide_body">
-                        <h4 class="projects__slide_body_title">Задача</h4>
-                        <p class="projects__slide_body_text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna.
-                        </p>
-                        <h4 class="projects__slide_body_title">Решение</h4>
-                        <p class="projects__slide_body_text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium
-                        </p>
-                        <h4 class="projects__slide_body_title">Достигнутый результат</h4>
-                        <p class="projects__slide_body_text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.
-                        </p>
+                    <div class="portfolio__bottom-content flex-row-reverse">
+                        <img src="img/services/1.png" alt="">
+                        <img src="img/services/2.png" alt="">
+                        <img src="img/services/3.png" alt="">
+                        <img src="img/services/4.png" alt="">
+                        <img src="img/services/5.png" alt="">
                     </div>
-                    <div class="projects__slide_footer">
-                        <h4 class="projects__slide_footer_title">Используемые технологии</h4>
-                        <div class="projects__slide_footer_icons">
-                            <img src="/img/icons/projects-icon-1.png" alt="technologies icon" class="projects__slide_footer_icon">
-                            <img src="/img/icons/projects-icon-2.png" alt="technologies icon" class="projects__slide_footer_icon">
-                            <img src="/img/icons/projects-icon-3.png" alt="technologies icon" class="projects__slide_footer_icon">
-                            <img src="/img/icons/projects-icon-4.png" alt="technologies icon" class="projects__slide_footer_icon">
-                        </div>
-                    </div>
+                    <img src="img/services/6.png" alt="">
                 </div>
-                <img src="/img/proj1.png" alt="laptop" class="projects__tech">
-                <button class="projects__next  projects__next-mobile">Следующий клиент</button>
+            </div>
+            <div class="portfolio__item">
+               <div class="portfolio__item-left">
+                   <img src="img/p-1.png" alt="">
+                   <div class="portfolio__footer">
+                     <p>
+                         Roistat предоставляет развернутую статистику по звонкам и посещениям сайта и соотносит ее с результатами каждой сделки. В результате вы получаете расчет RO по каждому рекламному каналу.
+                     </p>
+
+                      <p>
+                          ‍Совместно с amoCRM Roistat помог нашему клиенту сократить расходы на рекламу и увеличить прибыльность бизнеса.
+                      </p>
+                   </div>
+               </div>
+               <div class="portfolio__item-right">
+                  <div class="portfolio__item-header">
+                      <div>
+                          <h3>ИП Престиж</h3>
+                          <span>Обучение преподавателей</span>
+                      </div>
+                      <img src="img/p-logo.png" alt="logo">
+                  </div>
+                   <div class="portfolio__item-body">
+                       <h4>Проблема</h4>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute </p>
+                   </div>
+                   <div class="portfolio__item-body">
+                       <h4>Решение</h4>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute </p>
+                   </div>
+                   <div class="portfolio__plus">
+                       Объем продаж <span>+ 25%</span>
+                   </div>
+                   <div class="portfolio__plus">
+                       Увеличение конверсии <span>+ 30%</span>
+                   </div>
+                   <div class="portfolio__footer">
+                      <p>
+                          Roistat предоставляет развернутую статистику по звонкам и посещениям сайта и соотносит ее с результатами каждой сделки. В результате вы получаете расчет RO по каждому рекламному каналу.
+                      </p>
+
+                       <p>
+                           ‍Совместно с amoCRM Roistat помог нашему клиенту сократить расходы на рекламу и увеличить прибыльность бизнеса.
+                       </p>
+                   </div>
+               </div>
+                <div class="portfolio__bottom">
+                    <h5 class="portfolio__bottom-title">Сервисы До и после</h5>
+                    <div class="portfolio__bottom-content">
+                        <img src="img/services/1.png" alt="">
+                        <img src="img/services/2.png" alt="">
+                        <img src="img/services/3.png" alt="">
+                        <img src="img/services/4.png" alt="">
+                        <img src="img/services/5.png" alt="">
+                    </div>
+                    <div class="portfolio__bottom-content flex-row-reverse">
+                        <img src="img/services/1.png" alt="">
+                        <img src="img/services/2.png" alt="">
+                        <img src="img/services/3.png" alt="">
+                        <img src="img/services/4.png" alt="">
+                        <img src="img/services/5.png" alt="">
+                    </div>
+                    <img src="img/services/6.png" alt="">
+                </div>
             </div>
         </div>
-        <div class="projects__slide">
-            <div class="container">
-                <div class="projects__slide_info">
-                    <div class="projects__slide_head">
-                        <h3 class="projects__slide_title">Ип престиж</h3>
-                        <p class="projects__slide_subtitle">Обучение преподавателей</p>
-                    </div>
-                    <div class="projects__slide_body">
-                        <h4 class="projects__slide_body_title">Задача</h4>
-                        <p class="projects__slide_body_text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna.
-                        </p>
-                        <h4 class="projects__slide_body_title">Решение</h4>
-                        <p class="projects__slide_body_text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium
-                        </p>
-                        <h4 class="projects__slide_body_title">Достигнутый результат</h4>
-                        <p class="projects__slide_body_text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.
-                        </p>
-                    </div>
-                    <div class="projects__slide_footer">
-                        <h4 class="projects__slide_footer_title">Используемые технологии</h4>
-                        <div class="projects__slide_footer_icons">
-                            <img src="/img/icons/projects-icon-1.png" alt="technologies icon" class="projects__slide_footer_icon">
-                            <img src="/img/icons/projects-icon-2.png" alt="technologies icon" class="projects__slide_footer_icon">
-                            <img src="/img/icons/projects-icon-3.png" alt="technologies icon" class="projects__slide_footer_icon">
-                            <img src="/img/icons/projects-icon-4.png" alt="technologies icon" class="projects__slide_footer_icon">
-                        </div>
-                    </div>
-                </div>
-                <img src="/img/proj2.png" alt="laptop" class="projects__tech">
-                <button class="projects__next projects__next-mobile">Следующий клиент</button>
-            </div>
-        </div>
-        <div class="projects__slide">
-            <div class="container">
-                <div class="projects__slide_info">
-                    <div class="projects__slide_head">
-                        <h3 class="projects__slide_title">Ип престиж</h3>
-                        <p class="projects__slide_subtitle">Обучение преподавателей</p>
-                    </div>
-                    <div class="projects__slide_body">
-                        <h4 class="projects__slide_body_title">Задача</h4>
-                        <p class="projects__slide_body_text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna.
-                        </p>
-                        <h4 class="projects__slide_body_title">Решение</h4>
-                        <p class="projects__slide_body_text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium
-                        </p>
-                        <h4 class="projects__slide_body_title">Достигнутый результат</h4>
-                        <p class="projects__slide_body_text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.
-                        </p>
-                    </div>
-                    <div class="projects__slide_footer">
-                        <h4 class="projects__slide_footer_title">Используемые технологии</h4>
-                        <div class="projects__slide_footer_icons">
-                            <img src="/img/icons/projects-icon-1.png" alt="technologies icon" class="projects__slide_footer_icon">
-                            <img src="/img/icons/projects-icon-2.png" alt="technologies icon" class="projects__slide_footer_icon">
-                            <img src="/img/icons/projects-icon-3.png" alt="technologies icon" class="projects__slide_footer_icon">
-                            <img src="/img/icons/projects-icon-4.png" alt="technologies icon" class="projects__slide_footer_icon">
-                        </div>
-                    </div>
-                </div>
-                <img src="/img/proj3.png" alt="laptop" class="projects__tech">
-                <button class="projects__next projects__next-mobile">Следующий клиент</button>
-            </div>
-        </div>
+
     </div>
 </section>
-
-<!-- end projects.html-->
+<!-- end portfolio.html-->
 
 <!-- start reviews.html-->
-<section class="reviews" id="reviews">
+<section class="reviews">
     <div class="container">
         <h2 class="reviews__title">Отзывы</h2>
-        <h3 class="reviews__subtitle">Наших постоянных клиентов</h3>
         <div class="reviews__wrap">
             <div class="reviews__item">
-                <div class="reviews__photo">
-                    <img src="img/reviews/1.png" alt="">
+                <div class="reviews__header">
+                   <div class="reviews__photo">
+                       <img src="img/reviews.png" alt="reviews">
+                   </div>
+                   <div class="reviews__initials">
+                       <h2 class="reviews__name">Ярослав Пархоменко</h2>
+                       <span class="reviews__position">
+                        Директор клининговой компании
+Almaclean.kz</span></div>
                 </div>
-                <h4 class="reviews__name">Ярослав Пархоменко</h4>
-                <span class="reviews__position">Директор клининговой компании Almaclean.kz</span>
                 <p class="reviews__desk">
-                    Спасибо всей команде
-                    RockMarketing за качественную и результативную рекламу. Работаем уже 2 года. Целевые заявки поступают стабильно. Планируем развивать сотрудничество. Всем рекомендую!
+                    Спасибо всей команде RockMarketing за качественную и результативную рекламу.
+                    Работаем уже 2 года. Целевые заявки поступают стабильно. Планируем развивать сотрудничество. Всем
+                    рекомендую!
                 </p>
             </div>
             <div class="reviews__item">
-                <div class="reviews__photo">
-                    <img src="img/reviews/1.png" alt="">
+                <div class="reviews__header">
+                    <div class="reviews__photo">
+                        <img src="img/reviews.png" alt="reviews">
+                    </div>
+                    <div class="reviews__initials">
+                        <h2 class="reviews__name">Ярослав Пархоменко</h2>
+                        <span class="reviews__position">
+                        Директор клининговой компании
+Almaclean.kz</span></div>
                 </div>
-                <h4 class="reviews__name">Ярослав Пархоменко</h4>
-                <span class="reviews__position">Директор клининговой компании Almaclean.kz</span>
                 <p class="reviews__desk">
-                    Спасибо всей команде
-                    RockMarketing за качественную и результативную рекламу. Работаем уже 2 года. Целевые заявки поступают стабильно. Планируем развивать сотрудничество. Всем рекомендую!
+                    Спасибо всей команде RockMarketing за качественную и результативную рекламу.
+                    Работаем уже 2 года. Целевые заявки поступают стабильно. Планируем развивать сотрудничество. Всем
+                    рекомендую!
                 </p>
             </div>
             <div class="reviews__item">
-                <div class="reviews__photo">
-                    <img src="img/reviews/1.png" alt="">
+                <div class="reviews__header">
+                    <div class="reviews__photo">
+                        <img src="img/reviews.png" alt="reviews">
+                    </div>
+                    <div class="reviews__initials">
+                        <h2 class="reviews__name">Ярослав Пархоменко</h2>
+                        <span class="reviews__position">
+                        Директор клининговой компании
+Almaclean.kz</span></div>
                 </div>
-                <h4 class="reviews__name">Ярослав Пархоменко</h4>
-                <span class="reviews__position">Директор клининговой компании Almaclean.kz</span>
                 <p class="reviews__desk">
-                    Спасибо всей команде
-                    RockMarketing за качественную и результативную рекламу. Работаем уже 2 года. Целевые заявки поступают стабильно. Планируем развивать сотрудничество. Всем рекомендую!
+                    Спасибо всей команде RockMarketing за качественную и результативную рекламу.
+                    Работаем уже 2 года. Целевые заявки поступают стабильно. Планируем развивать сотрудничество. Всем
+                    рекомендую!
                 </p>
             </div>
             <div class="reviews__item">
-                <div class="reviews__photo">
-                    <img src="img/reviews/1.png" alt="">
+                <div class="reviews__header">
+                    <div class="reviews__photo">
+                        <img src="img/reviews.png" alt="reviews">
+                    </div>
+                    <div class="reviews__initials">
+                        <h2 class="reviews__name">Ярослав Пархоменко</h2>
+                        <span class="reviews__position">
+                        Директор клининговой компании
+Almaclean.kz</span></div>
                 </div>
-                <h4 class="reviews__name">Ярослав Пархоменко</h4>
-                <span class="reviews__position">Директор клининговой компании Almaclean.kz</span>
                 <p class="reviews__desk">
-                    Спасибо всей команде
-                    RockMarketing за качественную и результативную рекламу. Работаем уже 2 года. Целевые заявки поступают стабильно. Планируем развивать сотрудничество. Всем рекомендую!
-                </p>
-            </div>
-            <div class="reviews__item">
-                <div class="reviews__photo">
-                    <img src="img/reviews/1.png" alt="">
-                </div>
-                <h4 class="reviews__name">Ярослав Пархоменко</h4>
-                <span class="reviews__position">Директор клининговой компании Almaclean.kz</span>
-                <p class="reviews__desk">
-                    Спасибо всей команде
-                    RockMarketing за качественную и результативную рекламу. Работаем уже 2 года. Целевые заявки поступают стабильно. Планируем развивать сотрудничество. Всем рекомендую!
-                </p>
-            </div>
-            <div class="reviews__item">
-                <div class="reviews__photo">
-                    <img src="img/reviews/1.png" alt="">
-                </div>
-                <h4 class="reviews__name">Ярослав Пархоменко</h4>
-                <span class="reviews__position">Директор клининговой компании Almaclean.kz</span>
-                <p class="reviews__desk">
-                    Спасибо всей команде
-                    RockMarketing за качественную и результативную рекламу. Работаем уже 2 года. Целевые заявки поступают стабильно. Планируем развивать сотрудничество. Всем рекомендую!
+                    Спасибо всей команде RockMarketing за качественную и результативную рекламу.
+                    Работаем уже 2 года. Целевые заявки поступают стабильно. Планируем развивать сотрудничество. Всем
+                    рекомендую!
                 </p>
             </div>
         </div>
-        <div class="reviews__actions">
-            <button class="reviews__prev"><img src="/img/icons/arrow-to-right-grey.png" alt="arrow"></button>
-            <span class="reviews__counter">
-                <strong class="reviews__current"></strong>
-                 /
-                <span class="reviews__amount"></span>
-            </span>
-            <button class="reviews__next"><img src="/img/icons/arrow-to-right-grey.png" alt="arrow"></button>
+        <div class="reviews__btn-wrap">
+            <button class="reviews__btn-all">Показать еще отзывы</button>
+            <button class="reviews__btn-add">Добавить свой отзыв</button>
         </div>
-        <button class="reviews__btn">Оставить отзыв</button>
     </div>
-    <div class="reviews__dots"></div>
-    <div class="reviews__dots right"></div>
 </section>
-
 <!-- end reviews.html-->
 
-<!-- start сost-services.html-->
-<section class="cost-services" id="prices">
+<!-- start successful-companies.html-->
+<section class="successful">
+
+</section>
+<!-- end successful-companies.html-->
+
+<!-- start form-1.html-->
+<section class="form-1">
     <div class="container">
-        <div class="cost-services__header">
-            <h2 class="cost-services__title">Стоимость услуг</h2>
-            <div class="cost-services__tab-nav">
-                <ul>
-                    <li><a href="#one" class="active">Уникальные</a></li>
-                    <li><a href="#two">Шаблонные</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="cost-services__tree"></div>
+
     </div>
-    <div class="cost-services__tabs">
-        <div class="cost-services__tab-content">
-            <div class="cost-services__tab-pane faded in active" id="one">
-                <div class="cost-services__item">
-                    <span class="cost-services__text">Когда нужен лендинг и ничего лишнего</span>
-                    <div class="cost-services__form-icon">
-                        <div class="cost-services__icon-01"></div>
-                    </div>
-                    <h3 class="cost-services__name">Оптимальный</h3>
-                    <ul class="cost-services__list">
-                        <li>Анализ ниши</li>
-                        <li>Продающие тексты</li>
-                        <li>Продающие триггеры</li>
-                        <li>Анализ ниши</li>
-                    </ul>
-                    <p class="cost-services__price">249 999 <span class="tenge"></span></p>
-                    <a href="#" class="cost-services__order">Заказать</a>
-                </div>
-                <div class="cost-services__item">
-                    <span class="cost-services__text">Когда нужен лендинг и ничего лишнего</span>
-                    <div class="cost-services__form-icon">
-                        <div class="cost-services__icon-02"></div>
-                    </div>
-                    <h3 class="cost-services__name">Комплексный </h3>
-                    <ul class="cost-services__list">
-                        <li>Анализ ниши</li>
-                        <li>Продающие тексты</li>
-                        <li>Продающие триггеры</li>
-                        <li>Анализ ниши</li>
-                    </ul>
-                    <p class="cost-services__price">249 999 <span class="tenge"></span></p>
-                    <a href="#" class="cost-services__order">Заказать</a>
-                </div>
-                <div class="cost-services__item">
-                    <span class="cost-services__text">Когда нужен лендинг и ничего лишнего</span>
-                    <div class="cost-services__form-icon">
-                        <div class="cost-services__icon-03"></div>
-                    </div>
-                    <h3 class="cost-services__name">Продвинутый</h3>
-                    <ul class="cost-services__list">
-                        <li>Анализ ниши</li>
-                        <li>Продающие тексты</li>
-                        <li>Продающие триггеры</li>
-                        <li>Анализ ниши</li>
-                    </ul>
-                    <p class="cost-services__price">249 999 <span class="tenge"></span></p>
-                    <a href="#" class="cost-services__order">Заказать</a>
-                </div>
-                <div class="cost-services__item">
-                    <span class="cost-services__text">Когда нужен лендинг и ничего лишнего</span>
-                    <div class="cost-services__form-icon">
-                        <div class="cost-services__icon-04"></div>
-                    </div>
-                    <h3 class="cost-services__name">Оптимальный</h3>
-                    <ul class="cost-services__list">
-                        <li>Анализ ниши</li>
-                        <li>Продающие тексты</li>
-                        <li>Продающие триггеры</li>
-                        <li>Анализ ниши</li>
-                    </ul>
-                    <p class="cost-services__price">249 999 <span class="tenge"></span></p>
-                    <a href="#" class="cost-services__order">Заказать</a>
-                </div>
+</section>
+<!-- end form-1.html-->
+
+<!-- start stages.html-->
+<section class="stages">
+    <div class="container">
+        <div class="stages__list">
+            <div class="stages__item">
+                <h3>Время
+                    действовать!
+                </h3>
+                <p>
+                    Процесс внедрения, не такой долгий,
+                    как могло показаться. Все проходит в
+                    несколько простых и быстрых этапов
+                </p>
             </div>
-            <div class="cost-services__tab-pane faded" id="two">
-                <div class="cost-services__item">
-                    <span class="cost-services__text">Когда нужен лендинг и ничего лишнего</span>
-                    <div class="cost-services__form-icon">
-                        <div class="cost-services__icon-01"></div>
-                    </div>
-                    <h3 class="cost-services__name">Оптимальный</h3>
-                    <ul class="cost-services__list">
-                        <li>Анализ ниши</li>
-                        <li>Продающие тексты</li>
-                        <li>Продающие триггеры</li>
-                        <li>Анализ ниши</li>
-                    </ul>
-                    <p class="cost-services__price">249 999 <span class="tenge"></span></p>
-                    <a href="#" class="cost-services__order">Заказать</a>
-                </div>
-                <div class="cost-services__item">
-                    <span class="cost-services__text">Когда нужен лендинг и ничего лишнего</span>
-                    <div class="cost-services__form-icon">
-                        <div class="cost-services__icon-02"></div>
-                    </div>
-                    <h3 class="cost-services__name">Комплексный </h3>
-                    <ul class="cost-services__list">
-                        <li>Анализ ниши</li>
-                        <li>Продающие тексты</li>
-                        <li>Продающие триггеры</li>
-                        <li>Анализ ниши</li>
-                    </ul>
-                    <p class="cost-services__price">249 999 <span class="tenge"></span></p>
-                    <a href="#" class="cost-services__order">Заказать</a>
-                </div>
-                <div class="cost-services__item">
-                    <span class="cost-services__text">Когда нужен лендинг и ничего лишнего</span>
-                    <div class="cost-services__form-icon">
-                        <div class="cost-services__icon-03"></div>
-                    </div>
-                    <h3 class="cost-services__name">Продвинутый</h3>
-                    <ul class="cost-services__list">
-                        <li>Анализ ниши</li>
-                        <li>Продающие тексты</li>
-                        <li>Продающие триггеры</li>
-                        <li>Анализ ниши</li>
-                    </ul>
-                    <p class="cost-services__price">249 999 <span class="tenge"></span></p>
-                    <a href="#" class="cost-services__order">Заказать</a>
-                </div>
-                <div class="cost-services__item">
-                    <span class="cost-services__text">Когда нужен лендинг и ничего лишнего</span>
-                    <div class="cost-services__form-icon">
-                        <div class="cost-services__icon-04"></div>
-                    </div>
-                    <h3 class="cost-services__name">Оптимальный</h3>
-                    <ul class="cost-services__list">
-                        <li>Анализ ниши</li>
-                        <li>Продающие тексты</li>
-                        <li>Продающие триггеры</li>
-                        <li>Анализ ниши</li>
-                    </ul>
-                    <p class="cost-services__price">249 999 <i class="tenge"></i></p>
-                    <a href="#" class="cost-services__order">Заказать</a>
-                </div>
+            <div class="stages__item">
+                <p>Сейчас</p>
+                <span>Вы оставляете заявку</span>
+            </div>
+            <div class="stages__item">
+                <p>Через 25 часов</p>
+                <span>Подписываем договор и
+получаем предоплату</span>
+            </div>
+            <div class="stages__item">
+                <p>Через 2,5 часа</p>
+                <span>Предоставляем ценовое
+предложение</span>
+            </div>
+            <div class="stages__item">
+                <p>Через 1 час</p>
+                <span>Готовы встретиться с Вами</span>
+            </div>
+            <div class="stages__item">
+                <p>Через 48 часов</p>
+                <span>Сдаем готовый проект</span>
+            </div>
+            <div class="stages__item">
+                <p>До 7 дней</p>
+                <span>Помогаем с работой и
+привыканием к Amocrm</span>
+            </div>
+            <div class="stages__item">
+                <p>Пожизненно</p>
+                <span>Добрые партнерские
+отношения</span>
+            </div>
+            <div class="stages__item">
+                <p>Сейчас</p>
+                <span>Вы оставляете заявку</span>
             </div>
         </div>
     </div>
-    <div class="cost-services__conditions">
-        <a href="#">Ознакомиться с тарифами на разработку сайтов, на основе готовых шаблонов</a>
-    </div>
-    <div class="cost-services__dots"></div>
-    <div class="cost-services__dots right"></div>
 </section>
+<!-- end stages.html-->
 
-<!-- end сost-services.html-->
-
-<!-- start order-2.html-->
-<section class="order-2">
+<!-- start form2.html-->
+<section class="form-2">
     <div class="container">
-        <div class="order-2__wrap">
-            <h1 class="order-2__title">Возможно вы искали <span>лендинг</span>? </h1>
-            <button class="order-2__button open-modal-btn" data-modal="request">Тогда вам сюда</button>
-        </div>
-        <div class="order-2__img-middle"></div>
+        <h2 class="form-2__title">Оставьте заявку</h2>
+        <h3 class="form-2__subtitle">и в ближайшее время наши специалисты свяжуться с вами</h3>
+        <form action="#">
+            <input type="text" name="name" placeholder="Ваш имя">
+            <input type="text" name="phone" placeholder="Ваш телефон">
+            <input type="text" name="mail" placeholder="Ваш e-mail">
+            <button type="submit">Заказать</button>
+            <p class="form-2__data-processing">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с
+                <a href="#">Пользовательским соглашением</a></p>
+        </form>
     </div>
-    <div class="order-2__img"></div>
-    <div class="order-2__img right"></div>
 </section>
-<!-- end order-2.html-->
+<!-- end form2.html-->
 
-<!-- start gifts.html-->
-<section class="gifts">
+<!-- start list.html-->
+<section class="list">
     <div class="container">
-        <h2 class="gifts__title">Вы любите получать подарки?</h2>
-        <h3 class="gifts__subtitle">а мы любим их делать!</h3>
-        <p class="gifts__description">Закажите лучший на рынке Landing Page и <strong>получите гарантированные бонусы:</strong></p>
-
-        <div class="gifts__list">
-            <figure class="gifts__item">
-                <img src="/img/1.png" alt="gift">
-                <figcaption><strong>Домен в зоне .kz</strong> сроком на 1 год</figcaption>
-            </figure>
-            <figure class="gifts__item">
-                <img src="/img/2.png" alt="gift">
-                <figcaption><strong>Надежный хостинг</strong> сроком на 1 год</figcaption>
-            </figure>
-            <figure class="gifts__item">
-                <img src="/img/3.png" alt="gift">
-                <figcaption><strong>Настройка контекстной рекламы</strong></figcaption>
-            </figure>
-            <figure class="gifts__item">
-                <img src="/img/4.png" alt="gift">
-                <figcaption><strong>Техподдержка </strong>сроком на 1 месяц</figcaption>
-            </figure>
-        </div>
-
+        <h2 class="list__title">Уже используете AMOCRM?</h2>
+        <h3 class="list__subtitle">Покупайте лицензии у нас и получайте гарантированные бонусы</h3>
+        <ul class="list__list">
+            <li>Бесплатный месяц использования amoCRM</li>
+            <li>Аудит amoCRM с заключением и рекомендациями</li>
+            <li>Бухгалтерские документы Казахстанского образца</li>
+            <li>При продлении более чем на 7 сотрудников, месяц тех.поддержки бесплатно</li>
+        </ul>
+        <button class="list__btn">Хочу к Вам</button>
     </div>
-    <form class="gifts__form">
-        <div class="container">
-            <label><input type="text" placeholder="Ваше имя"></label>
-            <label><input type="text" placeholder="E-mail"></label>
-            <label><input type="text" placeholder="Номер телефона"></label>
-            <button class="gifts__submit">Заказать</button>
-            <span class="gifts__terms">
-                Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с
-                <a href="#">Пользовательским соглашением</a>
-            </span>
-            <img src="/img/dots.png" alt="dots" class="gifts__dots">
-            <img src="/img/girl.png" alt="girl" class="gifts__girl">
-        </div>
-    </form>
 </section>
-
-<!-- end gifts.html-->
+<!-- end list.html-->
 
 <!-- start faq.html-->
 <section class="faq">
@@ -1057,89 +885,126 @@
 </section>
 <!-- end faq.html-->
 
-<!-- start additional-services.html-->
-<section class="add-services" id="services">
-    <div class="container">
-        <h2 class="add-services__title">А также</h2>
-        <h2 class="add-services__subtitle">Мы можем помочь вам</h2>
+<!-- start crm.html-->
+<section class="crm">
+    <h2 class="crm__title">А так же мы внедряем следующие CRM-системы в ваш бизнес</h2>
+   <div class="crm__row">
+       <figure class="crm__item">
+           <img src="img/crm/1.png" alt="">
+           <figcaption>
+               <button class="crm__feedback">Оставить заявку</button>
+           </figcaption>
+       </figure>
+       <figure class="crm__item">
+           <img src="img/crm/2.png" alt="">
+           <figcaption>
+               <button class="crm__feedback">Оставить заявку</button>
+           </figcaption>
+       </figure>
+       <figure class="crm__item">
+           <img src="img/crm/3.png" alt="">
+           <figcaption>
+               <button class="crm__feedback">Оставить заявку</button>
+           </figcaption>
+       </figure>
+       <figure class="crm__item">
+           <img src="img/crm/4.png" alt="">
+           <figcaption>
+               <button class="crm__feedback">Оставить заявку</button>
+           </figcaption>
+       </figure>
+   </div>
+   <div class="crm__row flex-lg-row-reverse">
+       <figure class="crm__item">
+           <img src="img/crm/8.png" alt="">
+           <figcaption>
+               <button class="crm__feedback">Оставить заявку</button>
+           </figcaption>
+       </figure>
+       <figure class="crm__item">
+           <img src="img/crm/7.png" alt="">
+           <figcaption>
+               <button class="crm__feedback">Оставить заявку</button>
+           </figcaption>
+       </figure>
+       <figure class="crm__item">
+           <img src="img/crm/6.png" alt="">
+           <figcaption>
+               <button class="crm__feedback">Оставить заявку</button>
+           </figcaption>
+       </figure>
+       <figure class="crm__item">
+           <img src="img/crm/5.png" alt="">
+           <figcaption>
+               <button class="crm__feedback">Оставить заявку</button>
+           </figcaption>
+       </figure>
+   </div>
+</section>
+<!-- end crm.html-->
+
+<!-- start map.html-->
+<section class="map">
+    <div class="map__left">
+        <div class="map__left-text">
+           <p> Республика Казахстан, 050026 <br>
+               <b> г. Алматы, ул. Манаса, 12</b>
+               <a href="mailto:dart@r2d2.kz">dart@r2d2.kz</a>
+           </p>
+        </div>
     </div>
-    <div class="add-services__wrap">
-        <figure class="add-services__item">
-            <div class="add-services__img"><img src="img/add-services/landing.png" alt="landing"/></div>
-            <figcaption>Разработка <br><span>landing page</span></figcaption>
-            <a href="#" class="add-services__link">Подробнее <i class="add-services__arrow"></i></a>
-        </figure>
-        <figure class="add-services__item">
-            <div class="add-services__img"><img src="img/add-services/seo.png" alt="landing"/></div>
-            <figcaption>SEO<br><span>оптимизация</span></figcaption>
-            <a href="#" class="add-services__link">Подробнее <i class="add-services__arrow"></i></a>
-        </figure>
-        <figure class="add-services__item">
-            <div class="add-services__img"><img src="img/add-services/3.png" alt="landing"/></div>
-            <figcaption>Контекстная<br><span>реклама</span></figcaption>
-            <a href="#" class="add-services__link">Подробнее <i class="add-services__arrow"></i></a>
-        </figure>
-        <figure class="add-services__item">
-            <div class="add-services__img"><img src="img/add-services/smm.png" alt="landing"/></div>
-            <figcaption>SMM</figcaption>
-            <a href="#" class="add-services__link">Подробнее <i class="add-services__arrow"></i></a>
-        </figure>
-        <figure class="add-services__item">
-            <div class="add-services__img"><img src="img/add-services/support.png" alt="landing"/></div>
-            <figcaption>Таргетинг</figcaption>
-            <a href="#" class="add-services__link">Подробнее <i class="add-services__arrow"></i></a>
-        </figure>
-        <figure class="add-services__item">
-            <div class="add-services__img"><img src="img/add-services/traning.png" alt="landing"/></div>
-            <figcaption>ТЕХ<br><span>поддержка</span></figcaption>
-            <a href="#" class="add-services__link">Подробнее <i class="add-services__arrow"></i></a>
-        </figure>
+    <div class="map__right">
+        <div class="map__right-text">
+            <h2>Добро
+                пожаловать
+                <b>в наш офис</b></h2>
+        </div>
     </div>
 </section>
-
-<!-- end additional-services.html-->
+<!-- end map.html-->
 
 <!-- start footer.html-->
-<footer class="footer">
+<footer class="footer" id="footer">
     <div class="container">
         <div class="footer__contacts">
             <h2 class="footer__title">Контакты</h2>
-            <img src="/img/footer/logo-black.png" alt="logo" class="footer__logo">
+            <img src="./img/logo.png" alt="logo" class="footer__logo">
             <span class="footer__address">Темирязева 42 к15\108 Офис 308</span>
-            <span class="footer__phone">+ 7 707 707 70 07</span>
-            <span class="footer__phone">+ 7 727 727 72 72 </span>
-            <span class="footer__email">info@rock-marketing.kz</span>
+            <span class="footer__phone">+ 7 700 347 02 83</span>
+            <span class="footer__phone">+ 7 700 347 02 83</span>
+            <span class="footer__email">dart@r2d2.kz</span>
             <a href="#" class="footer__messanger">
-                <img src="/img/footer/whats-app.png" alt="whatsup">
+                <img src="./img/whats_app.png" alt="whatsup">
             </a>
         </div>
         <div class="footer__wrap">
             <nav class="footer__nav">
-                <a href="#services" class="footer__nav_item navigation__link">Услуги</a>
-                <a href="#portfolio" class="footer__nav_item navigation__link">Портфолио</a>
-                <a href="#reviews" class="footer__nav_item navigation__link">Отзывы</a>
+                <a href="#about" class="footer__nav_item navigation__link">Услуги</a>
+                <a href="#rock" class="footer__nav_item navigation__link">Портфолио</a>
+                <a href="#portfolio" class="footer__nav_item navigation__link">Отзывы</a>
                 <a href="#prices" class="footer__nav_item navigation__link">Стоимость</a>
-                <a href="#about" class="footer__nav_item navigation__link">Преимущества</a>
+                <a href="#guarantee" class="footer__nav_item navigation__link">Преимущества</a>
             </nav>
             <ul class="footer__items">
+                <li><a href="#" class="footer__nav_item">Главная</a></li>
                 <li><a href="#" class="footer__nav_item">Услуги</a></li>
                 <li><a href="#" class="footer__nav_item">Портфолио</a></li>
                 <li><a href="#" class="footer__nav_item">Отзывы</a></li>
-                <li><a href="#" class="footer__nav_item">Стоимость</a></li>
+                <li><a href="#" class="footer__nav_item">Тарифы</a></li>
                 <li><a href="#" class="footer__nav_item">Преимущества</a></li>
             </ul>
-            <div class="footer__cards">
-                <h4 class="footer__cards_title">Мы принимаем:</h4>
-                <img src="/img/footer/payment.png" alt="cards">
-            </div>
             <div class="footer__social">
-                <button class="footer__request open-modal-btn" data-modal="request">Заказать обратный звонок</button>
                 <div class="footer__social_wrap">
                     <h4 class="footer__social_title">Следите за новостями в соц. сетях:</h4>
-                    <a href="#"><img src="/img/footer/vk.png" alt="social icon"></a>
-                    <a href="#"><img src="/img/footer/facebook.png" alt="social icon"></a>
-                    <a href="#"><img src="/img/footer/ok.png" alt="social icon"></a>
-                    <a href="#"><img src="/img/footer/inst.png" alt="social icon"></a>
+                    <a href="#"><img src="./img/icons/vk.png" alt="social icon"></a>
+                    <a href="#"><img src="./img/icons/facebook.png" alt="social icon"></a>
+                    <a href="#"><img src="./img/icons/ok.png" alt="social icon"></a>
+                    <a href="#"><img src="./img/icons/inst.png" alt="social icon"></a>
+                </div>
+
+                <div class="footer__performer">
+                    <span>сайт разработан:</span>
+                    <img src="img/rock.png" alt="">
                 </div>
             </div>
         </div>
@@ -1148,44 +1013,11 @@
 
 <!-- end footer.html-->
 
-<!-- start modals.html-->
-<div class="modal modal-request">
-    <h2 class="modal__title">Оставьте заявку на <strong>бесплатную консультацию</strong></h2>
-    <p class="modal__subtitle">и получите конкретную стратегию привлечения клиентов под ваш бюджет</p>
-    <form class="modal-request__form">
-        <label><input type="text" placeholder="Ваше имя" class="modal-request__name"></label>
-        <label><input type="tel" placeholder="Номер телефона" class="modal-request__phone"></label>
-        <button class="modal__submit">Заказать</button>
-    </form>
-    <span class="modal__terms">
-        Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с
-        <a href="#">Пользовательским соглашением</a>
-    </span>
-</div>
-
-<div class="modal modal-question">
-    <h2 class="modal__title">Хотите <strong>задать вопрос?</strong></h2>
-    <p class="modal__subtitle">Заполните поля и получите развернутый ответ от наших специалистов</p>
-    <form class="modal-question__form">
-        <label><input type="text" placeholder="Ваше имя" class="modal-question__name"></label>
-        <label><input type="text" placeholder="Номер телефона" class="modal-question__phone"></label>
-        <label><input type="text" placeholder="Ваш вопрос" class="modal-question__text"></label>
-        <button class="modal__submit">Задать вопрос</button>
-    </form>
-    <span class="modal__terms">
-        Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с
-        <a href="#">Пользовательским соглашением</a>
-    </span>
-</div>
-
-<!-- end modals.html-->
-
 <!-- start html_close.html-->
 
 <script src='js/jquery-3.2.1.js' type="text/javascript"></script>
-<script src='js/slick.min.js' type="text/javascript"></script>
+<script src='js/owl.carousel.min.js' type="text/javascript"></script>
 <script src="js/script.min.js" type="text/javascript"></script>
 </body>
 </html>
-
 <!-- end html_close.html-->
