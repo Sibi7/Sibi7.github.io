@@ -1,0 +1,95 @@
+.r-saving {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__title {
+    width: 100%;
+    padding-top: rem(80);
+    padding-bottom: rem(67);
+    text-align: center;
+    font-weight: 400;
+    font-size: rem(36);
+    line-height: rem(40);
+
+    b {
+      font-family: "TTNormsExtraBold", sans-serif;
+    }
+
+  }
+
+  &__item {
+    position: relative;
+    width: 50%;
+    margin: 0;
+    min-height: rem(600);
+    background: url("../img/dot-bg.png") center #262626;
+    color: #fff;
+
+    img {
+      position: absolute;
+      right: 0;
+
+    }
+
+    figcaption {
+      position: absolute;
+      bottom: rem(60);
+      right: rem(250);
+      max-width: rem(331);
+      font-size: rem(30);
+
+      b {
+
+      }
+    }
+
+    &:nth-of-type(1) {
+      img {
+        top: -30px;
+      }
+    }
+
+    &:nth-of-type(2) {
+      img {
+        left: 130px;
+        top: -20px;
+      }
+    }
+
+    &:nth-of-type(3) {
+      img {
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    &:nth-of-type(4) {
+      overflow: hidden;
+      img {
+        top: -20px;
+        right: -20px;
+      }
+    }
+    &:nth-of-type(5) {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &:nth-of-type(6) {
+      img {
+        top: 30px;
+        left: 100px;
+      }
+    }
+    &:nth-of-type(2),
+    &:nth-of-type(3),
+    &:nth-of-type(6) {
+      background: url("../img/r-dot.png") center #fafafa no-repeat;
+      background-size: 350px;
+    }
+  }
+}

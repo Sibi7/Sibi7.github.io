@@ -1,0 +1,67 @@
+@import "_color-var";
+@import "_fonts";
+@import "_libs";
+@import "_mixins/mixins";
+@import "_header";
+@import "_footer";
+@import "_questions";
+@import "_function";
+@import "_app_business";
+@import "_feedback";
+@import "_resource-saving";
+@import "_clients";
+@import "_map";
+@import "_crm";
+@import "_faq";
+@import "_list";
+@import "_form-2";
+@import "_stages";
+
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: $accent;
+  color: #fff;
+}
+
+body {
+  font-size: rem(20);
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  font-family: $default-font;
+  overflow-x: hidden;
+  color: $text;
+  @include custom-scroll-bar();
+  input, textarea {
+    border: #666 1px solid;
+    outline: none;
+    &:focus:required:invalid {
+      border-color: red;
+    }
+    &:required:valid {
+      border-color: green;
+    }
+  }
+}
+b, strong {
+  font-weight: bold;
+}
+a:hover{
+  text-decoration: none;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  &.img-width {
+    width: 100%;
+  }
+}
+
+
+
+@import "media"; // Always at the end

@@ -1,0 +1,51 @@
+.app-business{
+  background-color: rgba(40, 199, 254, 0.99);
+  &__title {
+    color: #fff;
+    padding-top: rem(80);
+    padding-bottom: rem(67);
+    text-align: center;
+    font-weight: 400;
+    font-size: rem(36);
+    line-height: rem(40);
+    b{
+      font-family: "TTNormsExtraBold", sans-serif;
+    }
+  }
+  &__wrap{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &:nth-child(3){
+      top: rem(-40);
+    }
+    &:nth-child(4){
+      top: rem(-80);
+    }
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: rem(210);
+    height: rem(238);
+    background: url("../img/app-border.png") no-repeat center;
+    background-size: contain;
+    margin-right: rem(22);
+    &:last-child{
+      margin-right: 0 ;
+    }
+    h1,h2,h3,h4,h5,h6{
+      color: #282828;
+      font-family: "TTNormsExtraBold", sans-serif;
+      font-size: rem(16);
+      line-height: rem(18);
+      letter-spacing: 0.4px;
+      margin-bottom: 0;
+      margin-top: rem(15);
+    }
+  }
+}
