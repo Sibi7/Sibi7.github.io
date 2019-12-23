@@ -7,4 +7,21 @@ function accordionInit() {
 }
 $(function () {
     accordionInit();
+    $('.portfolio__wrap').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        navText: ["<img src='img/nav-left.png'>","<img src='img/nav-right.png'>"],
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
 });

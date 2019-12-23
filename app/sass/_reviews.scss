@@ -1,0 +1,113 @@
+.reviews {
+  margin-bottom: rem(80);
+  &__title {
+    font-size: 36px;
+    line-height: 25px;
+    font-family: "TTNormsExtraBold", sans-serif;
+    text-align: center;
+    margin-bottom: rem(35);
+
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+
+  &__item {
+    position: relative;
+    background: #f2efef;
+    padding: rem(35) rem(45);
+    margin-bottom: rem(20);
+    margin-right: rem(45);
+    width: calc(50% - 23px);
+    margin-top: rem(58);
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+
+  &__header {
+    display: flex;
+
+  }
+
+  &__photo {
+    position: absolute;
+    top: rem(-57);
+    width: rem(157);
+    height: rem(157);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      width: rem(45);
+      height: rem(45);
+      background: url("../img/icons/quotes.png") no-repeat center #04aaca;
+      border-radius: 50%;
+right: 0;
+      top: rem(-7);
+    }
+  }
+
+  &__initials {
+    margin-left: auto;
+    max-width: rem(250);
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__name {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-family: "TTNormsExtraBold", sans-serif;
+    margin-bottom: 0;
+    line-height: rem(20);
+  }
+
+  &__position {
+    font-size: rem(12);
+    font-weight: 400;
+    letter-spacing: 0.6px;
+  }
+
+  &__desk {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    margin-top: rem(40);
+    margin-bottom: 0;
+  }
+  &__btn-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(12);
+  }
+  &__btn-all, &__btn-add{
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    background-color: #ffffff;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.8px;
+    padding: rem(23) rem(38);
+    transition: 300ms ease;
+    &:hover{
+      transform: scale(1.03);
+      transition: 300ms ease;
+    }
+  }
+  &__btn-add{
+    border: transparent;
+    background: #04aaca;
+    color: #fff;
+  }
+}

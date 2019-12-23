@@ -1,0 +1,178 @@
+.form-1 {
+  position: relative;
+  padding: rem(80) 0;
+  background: url("../img/dot-form-1.png") #01abcc;
+  background-size: 100%;
+
+  * {
+    color: #fff;
+  }
+
+  &__wrap {
+    width: 100%;
+    display: flex;
+    border: rem(15) solid #fff;
+  }
+
+  &__title {
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.3px;
+    font-family: "TTNormsExtraBold", sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-bottom: rem(12);
+    margin-left: auto;
+  }
+
+  &__desk {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    max-width: rem(360);
+    margin: 0 auto rem(30) 0;
+    letter-spacing: 0.8px;
+  }
+
+  &__left {
+    width: 40%;
+  }
+
+  &__right {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    padding: 50px 0 0 0;
+
+    form {
+      margin-left: 94px;
+      input {
+        width: 263px;
+        background: rgba(77, 196, 219, 0.7);
+        height: 50px;
+        border-radius: 4px;
+        font-family: "TTNormsMedium", sans-serif;
+        font-size: 15px;
+        line-height: 15px;
+        padding: 19px 24px;
+        letter-spacing: 0.38px;
+        border: none;
+        margin-bottom: 14px;
+        margin-right: 10px;
+        display: inline-block;
+
+        &::placeholder {
+          color: #fff;
+        }
+
+        &:nth-child(1) {
+          width: 217px;
+        }
+      }
+
+      button {
+        width: 218px;
+        height: 50px;
+        border-radius: 3px;
+        border: none;
+        background-color: #f7f7f7;
+        background-image: linear-gradient(to top, rgba(246, 255, 255, 0) 0%, #f6ffff 100%);
+        color: #01abcc;
+        font-family: "TTNormsExtraBold", sans-serif;
+        font-size: 21px;
+        line-height: 21px;
+        letter-spacing: 0.89px;
+        cursor: pointer;
+        transition: 200ms ease;
+
+        &:hover {
+          transform: scale(1.03);
+          transition: 200ms ease;
+        }
+      }
+    }
+  }
+  &__absolute{
+    position: absolute;
+    top: 59px;
+  }
+}
+
+.form-2 {
+  background: url("../img/dot-form-2.png") #01abcc;
+  background-size: 100%;
+  text-align: center;
+  padding: rem(65) 0;
+
+  * {
+    color: #fff;
+  }
+
+  &__title {
+    font-family: "TTNormsExtraBold", sans-serif;
+    font-size: rem(60);
+    line-height: rem(60);
+    margin-bottom: rem(15);
+  }
+
+  &__subtitle {
+    font-family: "TTNormsLight", sans-serif;
+    letter-spacing: 0.9px;
+    font-size: rem(18);
+    line-height: rem(18);
+    margin-bottom: rem(35);
+  }
+
+  form {
+    input {
+      background: #4dc4db;
+      border-radius: rem(4);
+      font-family: "TTNormsMedium", sans-serif;
+      border: none;
+      padding: rem(15) rem(25);
+      font-size: rem(15);
+      letter-spacing: 0.38px;
+      width: calc(25% - 15px);
+      margin-right: rem(10);
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+
+    button {
+      width: calc(25% - 15px);
+      border-radius: rem(3);
+      color: #01abcc;
+      background: #f7f7f7;
+      border: none;
+      padding: rem(15) 0;
+      font-size: rem(15);
+      letter-spacing: 0.89px;
+      cursor: pointer;
+      font-family: "TTNormsExtraBold", sans-serif;
+      transition: 200ms ease;
+
+      &:hover {
+        transition: 200ms ease;
+        transform: scale(1.03);
+      }
+    }
+
+
+  }
+
+  &__data-processing {
+    margin-top: rem(40);
+    margin-bottom: rem(0);
+    letter-spacing: 0.65px;
+    opacity: 0.5;
+    font-size: rem(13);
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
