@@ -1,0 +1,136 @@
+.faq{
+  position: relative;
+  @include media-breakpoint-down(md){
+  }
+  &__title {
+       font-size: rem(36);
+       font-family: 'TTNormsExtraBold', sans-serif;;
+       margin-top: rem(80);
+       text-align: center;
+       @include media-breakpoint-down(md) {
+         font-size: 30px;
+         text-align: center;
+         line-height: 1;
+         letter-spacing: 0.4px;
+         margin-top: rem(45);
+       }
+     }
+
+  &__subtitle {
+    text-align: center;
+    font-size: rem(24);
+    line-height: rem(24);
+    letter-spacing: 0.6px;
+    margin-bottom: 0;
+    font-weight: normal;
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: rem(20);
+    }
+  }
+  &__accordion{
+    padding: rem(40)  0 rem(80) 0;
+    background: #fff;
+    @include media-breakpoint-down(md){
+        padding: rem(20);
+      box-shadow: 0 0 95px rgba(60,60,60,.12);
+      margin-bottom: rem(35);
+      }
+
+  }
+  &__accordion-item{
+    border-bottom: 1px dotted #e8e8e8;
+    &:last-child{
+      border: none;
+    }
+  }
+  &__accordion-title{
+    width: 100%;
+    padding: rem(13) rem(50) rem(13) 0  ;
+    @include media-breakpoint-down(md) {
+      padding: rem(20) rem(30) rem(20) 0;
+
+
+    }
+    a{
+      position: relative;
+      display: inline-flex;
+      width: 100%;
+      color: #262626;
+      font-family: "TTNormsExtraBold", sans-serif;
+      @include media-breakpoint-down(md) {
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0.45px;
+        line-height: 18px;
+      }
+      &:before{
+        content: '+';
+        position: absolute;
+        text-align: center;
+        right: -50px;
+        top: 0;
+        height: rem(32);
+        width: rem(32);
+        border-radius: 50%;
+        border: 1px solid #d1d1d1;
+        color: #d1d1d1;
+        font-family: "MullerBold", serif;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: 300ms ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        @include media-breakpoint-down(md) {
+          left: inherit;
+          right: -30px;
+          width: 21px;
+          height: 21px;
+          font-size: 17px;
+          text-transform: uppercase;
+          letter-spacing: 1.2px;
+        }
+      }
+
+    }
+    .active{
+      transition: 300ms ease;
+
+      &:before{
+        content: '-';
+        color:  #ff4958;
+        border: 1px solid  #ff4958;
+        transition: 300ms ease;
+        line-height: rem(30);
+        display: inline-block;
+        @include media-breakpoint-down(md){
+          line-height: rem(19);
+          font-size: 17px;
+          font-family: "TTNormsBlack", sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 1.2px;
+        }
+
+      }
+    }
+  }
+  &__accordion-content{
+    display: none;
+    padding: 0 rem(50) rem(30) 0;
+    color: #797979;
+    font-size: rem(18);
+    line-height: rem(21);
+    letter-spacing: 0.45px;
+    @include media-breakpoint-down(md) {
+      padding: 0  rem(30)  rem(20) 0;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.35px;
+    }
+  }
+}

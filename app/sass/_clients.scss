@@ -1,0 +1,63 @@
+.clients {
+  background: #f7f6f6;
+
+  &__title {
+    padding-top: rem(80);
+    padding-bottom: rem(67);
+    text-align: center;
+    font-weight: 400;
+    font-size: rem(36);
+    line-height: rem(40);
+
+    b {
+      font-family: "TTNormsExtraBold", sans-serif;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: rem(24);
+      padding-top: rem(40);
+      padding-bottom: rem(20);
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: rem(100);
+    @include media-breakpoint-down(md){
+      padding-bottom: rem(40);
+    }
+  }
+
+  &__logo {
+    position: relative;
+    width: rem(210);
+    height: rem(47);
+    margin-bottom: rem(50);
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    @include media-breakpoint-down(md) {
+      margin-bottom: rem(20);
+      width: 33%;
+      height: auto;
+    }
+
+    img {
+      max-width: 100%;
+      object-fit: contain;
+      filter: grayscale(100%);
+      transition: 300ms ease;
+      @include media-breakpoint-down(md) {
+        padding: 0 rem(20);
+      }
+
+      &:hover {
+        filter: grayscale(0%);
+        transition: 300ms ease;
+      }
+    }
+  }
+}

@@ -1,0 +1,276 @@
+.rates {
+  background: url("../img/dot-bg.png");
+  background-size: 100%;
+
+  &__title {
+    text-align: center;
+    padding-top: rem(70);
+    padding-bottom: rem(45);
+    font-size: rem(36);
+    line-height: rem(36);
+    font-weight: 400;
+    margin: 0;
+
+    b {
+      font-family: "TTNormsExtraBold", sans-serif;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+      padding-bottom: 10px;
+      padding-top: rem(30);
+    }
+  }
+
+  &__table {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: rem(40);
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+
+  &__thead {
+    display: flex;
+    width: 100%;
+
+    .rates__td {
+      font-size: rem(12);
+      font-family: "TTNormsExtraBold", sans-serif;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .rates__tr {
+      background: #04aaca;
+
+    }
+  }
+
+  &__tbody {
+    width: 100%;
+    border: 1px solid #e8e8e8;
+    display: flex;
+
+    .rates__td {
+      font-size: 15px;
+      font-weight: 400;
+      font-family: "TTNormsMedium", sans-serif;
+
+      span {
+        font-family: "TTNormsExtraBold", sans-serif;
+        color: #04aaca;
+      }
+
+      b {
+
+      }
+
+      img {
+        width: 20px;
+      }
+    }
+
+    .rates__price {
+      color: #262626 !important;
+
+      img {
+        width: 10px;
+        height: 10px;
+      }
+    }
+
+  }
+
+  &__tr {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-right: 1px solid #e8e8e8;
+    text-align: center;
+
+    &:first-child {
+      min-width: 520px;
+      max-width: 520px;
+      text-align: left;
+    }
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &__td {
+    width: 100%;
+    padding: rem(15);
+    height: 100%;
+
+    &:nth-child(even) {
+      background: #f8f6f6;;
+    }
+  }
+
+  &__total {
+    padding: 120px 0;
+    max-width: 1062px;
+    margin: 0 auto;
+    text-align: center;
+    @include media-breakpoint-down(md) {
+      background: #e8e8e8;
+      padding: 20px 0;
+    }
+
+  }
+
+  &__total-title {
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 1.8px;
+    font-family: "TTNormsBold", sans-serif;
+    margin-bottom: 25px;
+    @include media-breakpoint-down(md){
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  &__total-text {
+    p {
+      font-size: 24px;
+      letter-spacing: 1.2px;
+      margin-bottom: 0;
+
+      span {
+        display: block;
+        font-size: 18px;
+        letter-spacing: 0.9px;
+      }
+    }
+  }
+
+  &__mobile {
+    .tabs {
+      position: relative;
+
+      &__header {
+        background: #04aaca;
+        text-align: right;
+        font-family: "TTNormsExtraBold", sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #fff;
+        padding: rem(10) rem(15);
+      }
+
+      &__nav {
+        position: absolute;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        overflow-x: auto;
+
+        li {
+          padding: rem(20) rem(10);
+          font-family: "TTNormsLight", sans-serif;
+          font-size: 9px;
+          font-weight: 300;
+          text-transform: uppercase;
+          letter-spacing: 0.19px;
+          color: #fff;
+          border-right: 1px solid #dddddd;
+          width: 100%;
+          cursor: pointer;
+          background: #282828;
+          text-align: center;
+
+          &:last-child {
+            border: none;
+          }
+        }
+      }
+
+      &__body {
+        border: solid 1px #e8e8e8;
+      }
+
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        padding: rem(5) rem(10);
+
+        &:nth-of-type(even) {
+          background: #f8f6f6;
+        }
+      }
+
+      &__left {
+        width: 80%;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 20.78px;
+      }
+
+      &__right {
+        text-align: center;
+        width: 20%;
+        color: #282828;
+        font-family: "TTNormsMedium", sans-serif;
+        font-size: 12px;
+        letter-spacing: -0.42px;
+
+        span {
+          color: #04aaca;
+        }
+
+      }
+
+      &__price {
+        font-size: 14px;
+        font-family: "TTNormsExtraBold", sans-serif;
+        color: #282828 !important;
+
+        img {
+          height: rem(7);
+          width: rem(7);
+          object-fit: contain;
+        }
+      }
+
+      &__footer {
+        text-align: center;
+        padding-top: 54px;
+
+        h1, h2, h3, h4, h5, h6 {
+          font-size: 15px;
+          color: #04aaca;
+          line-height: 24px;
+          margin-top: rem(15);
+        }
+
+        p {
+          font-size: 15px;
+          font-family: "TTNormsExtraBold", sans-serif;
+
+          b {
+            font-size: 30px;
+
+          }
+        }
+      }
+
+      &__content {
+        transition: 300ms ease;
+        position: relative;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+  }
+}

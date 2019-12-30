@@ -1,0 +1,228 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 940px;
+  width: 100%;
+  padding: 65px 88px;
+  background-color: #fff;
+  @include media-breakpoint-down(md) {
+    max-width: 90%;
+  }
+  @include media-breakpoint-down(xs) {
+    padding: 30px;
+  }
+
+  &--visible {
+    display: block;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 13px;
+    font-size: 28px;
+    text-align: center;
+    @include media-breakpoint-down(md) {
+      font-size: 22px;
+      line-height: 1.2;
+    }
+    strong {
+      font-family: 'TTNormsExtraBold', serif;
+    }
+    &-img {
+      display: block;
+      margin: 0 auto;
+      height: 80px;
+    }
+  }
+  &__subtitle {
+    font-family: 'TTNormsLight', serif;
+    font-size: 18px;
+    text-align: center;
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+      line-height: 1.1;
+    }
+  }
+  &__terms {
+    margin: 0 auto;
+    display: block;
+    font-size: 13px;
+    line-height: 14px;
+    text-align: center;
+    max-width: 510px;
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+  &__submit {
+    padding: 0 50px;
+    min-width: 230px;
+    height: 67px;
+    font-size: 16px;
+    border-radius: 3px;
+    font-family: 'TTNormsExtraBold', serif;
+    background-color: #04aaca;
+    color: #fff;
+    transition: .4s;
+    text-transform: uppercase;
+    border: none;
+    transition: .4s;
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+      height: 52px;
+      width: 100%;
+    }
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 8px 13px 43px rgba(38, 38, 38, 0.35);
+    }
+  }
+
+  form {
+    margin-bottom: 30px;
+  }
+  label {
+    margin-bottom: 0;
+  }
+  input {
+    padding: 0 10px 0 35px;
+    height: 62px;
+    border-radius: 3px;
+    border: 1px solid #04aaca!important;
+    font-size: 14px;
+    @include media-breakpoint-down(md) {
+      height: 52px;
+    }
+  }
+
+  &-request {
+    &__form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+      }
+    }
+    &__name {
+      width: 220px;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+    }
+    &__phone {
+      width: 287px;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+    }
+    label {
+      @include media-breakpoint-down(md) {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+    }
+  }
+
+  &-question, &-review {
+    &__form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+      }
+    }
+    &__name {
+      width: 315px;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+    }
+    &__phone {
+      width: 445px;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+    }
+    &__text {
+      width: 484px;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+    }
+    label {
+      @include media-breakpoint-down(md) {
+        margin-bottom: 10px;
+      }
+      &:not(:last-of-type) {
+        @include media-breakpoint-up(lg) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  &-request-price {
+    &__form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+      }
+    }
+    label {
+      @include media-breakpoint-down(md) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  &__close {
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+    background: transparent;
+    border: none;
+    &:before, &:after {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      content: '';
+      height: 2px;
+      width: 100%;
+      background: #aaa;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  background: rgba(0, 0, 0, .6);
+  .overlay_active & {
+    display: block;
+  }
+}
+.overlay_active {
+  position: relative;
+  overflow: hidden;
+}
