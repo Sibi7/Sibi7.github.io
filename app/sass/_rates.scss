@@ -26,6 +26,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-bottom: rem(40);
+    overflow-x: auto;
     @include media-breakpoint-down(md) {
       display: none;
     }

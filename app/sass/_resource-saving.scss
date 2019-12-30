@@ -72,6 +72,7 @@
     }
 
     &:nth-of-type(2) {
+      overflow: hidden;
       img {
         left: 130px;
         top: -20px;
@@ -125,6 +126,7 @@
     }
 
     &:nth-of-type(6) {
+      overflow: hidden;
       img {
         top: 30px;
         left: 100px;
