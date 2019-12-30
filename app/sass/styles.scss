@@ -45,13 +45,13 @@ body {
   color: $text;
   @include custom-scroll-bar();
   input, textarea {
-    border: transparent 1px solid!important;
+    border: transparent 1px solid;
     outline: none;
     &:focus:required:invalid {
-      border-color: red!important;;
+      border-color: red;
     }
     &:required:valid {
-      border-color: green!important;
+      border-color: green;
     }
 
   }
