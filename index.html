@@ -831,7 +831,7 @@ Almaclean.kz</span></div>
         </div>
         <div class="reviews__btn-wrap">
             <button class="reviews__btn-all">Показать еще отзывы</button>
-            <button class="reviews__btn-add">Добавить свой отзыв</button>
+            <button class="reviews__btn-add open-modal-btn" data-modal="review">Добавить свой отзыв</button>
         </div>
     </div>
 </section>
@@ -1738,9 +1738,11 @@ Almaclean.kz</span></div>
     <h2 class="modal__title">Заполните<strong> все поля!</strong></h2>
     <form class="modal-review__form">
         <label><input type="text" placeholder="Ваше имя" required class="modal-review__name"></label>
+        <label><input type="text" placeholder="Компания" required class="modal-review__company"></label>
+        <label><input type="text" placeholder="Должность" required class="modal-review__position"></label>
         <label><input type="tel" placeholder="Номер телефона" required class="modal-review__phone"></label>
-        <label><input type="text" placeholder="Ваш вопрос" required class="modal-review__text"></label>
-        <button class="modal__submit">Оставить отзыв</button>
+        <textarea placeholder="Ваш отзыв" required></textarea>
+        <button class="modal__submit">Оставить свой отзыв</button>
     </form>
     <span class="modal__terms">
         Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с
@@ -1768,7 +1770,8 @@ Almaclean.kz</span></div>
             <span class="footer__phone">+ 7 700 347 02 83</span>
             <span class="footer__email">dart@r2d2.kz</span>
             <a href="#" class="footer__messanger">
-                <img src="./img/whats_app.png" alt="whatsup">
+                <img src="./img/icons/whatsapp.svg" alt="whatsup">
+                Whats app
             </a>
         </div>
         <div class="footer__wrap">
