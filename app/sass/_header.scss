@@ -24,6 +24,8 @@
       width: 100%;
       z-index: 9999;
       transition: 1000ms ease;
+      display: flex;
+      align-items: center;
     }
   }
   @include media-breakpoint-down(md){
@@ -88,7 +90,7 @@
 
     @include media-breakpoint-down(md) {
       display: flex;
-      width: 100%;
+      width: auto;
       align-items: center;
       margin-top: 0;
       span {
@@ -110,9 +112,12 @@
   &__phones {
     margin-top: rem(35);
     text-align: right;
-    @include media-breakpoint-down(md) {
-      display: none;
+    @include media-breakpoint-down(md){
+      margin-top: 0;
+     margin-right: auto;
+      margin-left: auto;
     }
+
   }
 
   &__phones-wrap {
@@ -122,6 +127,19 @@
       font-size: rem(20);
       line-height: rem(27);
       letter-spacing: 1.06px;
+
+    }
+    @include media-breakpoint-down(md){
+      a{
+        font-size: rem(18);
+        line-height: rem(20);
+        display: block;
+      }
+      img{
+        display: none;
+      }br{
+      display: none;
+             }
     }
   }
 
@@ -397,4 +415,7 @@
   letter-spacing: 0.92px;
   padding: 0;
   margin: 0;
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
 }

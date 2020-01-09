@@ -138,6 +138,7 @@
   }
 
   &__bottom {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -150,8 +151,14 @@
       width: 100%;
     }
 
-    img {
+    .amocrm-icons {
       width: auto !important;
+      position: absolute;
+      right: 10px;
+      top: 40%;
+      @include media-breakpoint-down(md){
+        top: 50%;
+      }
     }
 
     @include media-breakpoint-down(md) {
@@ -162,6 +169,7 @@
       img {
         max-width: 100px;
         height: rem(15);
+        margin: rem(5);
       }
     }
   }
@@ -172,7 +180,7 @@
   }
 
   &__bottom-content {
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -183,6 +191,7 @@
 
     @include media-breakpoint-down(md) {
       flex-wrap: wrap;
+      width: 85%;
     }
 
   }

@@ -66,7 +66,8 @@ function positionTabNav() {
         top: firstHeight
     });
 
-    $(document).on('click', '.tabs__nav li', function () {
+    $(document).on('click', '.tabs__nav li', function (e) {
+        e.preventDefault();
         $('.tabs__body').each(function () {
             if ($(this).closest('.tabs__content').hasClass('active-tab') === true) {
                 var tabsBody = $(this).innerHeight();
@@ -77,6 +78,9 @@ function positionTabNav() {
                 });
             }
         });
+        var id = $('.rates');
+        var  top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 300);
     });
 }
 
@@ -175,6 +179,5 @@ $(function () {
     phoneMaskAndValidationInit();
     $(".tabs").lightTabs();
     sliderInit();
-
 
 });
