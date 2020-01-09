@@ -57,17 +57,27 @@ function formSubmitInit() {
 
 function positionTabNav() {
 
-    var tabsNav = $('.tabs__nav');
-    var tabsContent = $('.tabs__content');
-    if(tabsContent.css('display') !== 'none') {
-        var tabsBody = $('.tabs__body').height();
-        var tabsHeader = $('.tabs__header').height();
-        var tabsHeight = tabsBody + tabsHeader;
-        tabsNav.css({
-            top: tabsHeight + 'px'
-        });
-    }
 
+    var tabsNav = $('.tabs__nav');
+    var firstTab = $('.tabs__body').innerHeight();
+    var firstHead = $('.tabs__header').innerHeight();
+    var firstHeight = firstTab + firstHead +  'px';
+    tabsNav.css({
+        top: firstHeight
+    });
+
+    $(document).on('click', '.tabs__nav li', function () {
+        $('.tabs__body').each(function () {
+            if ($(this).closest('.tabs__content').hasClass('active-tab') === true) {
+                var tabsBody = $(this).innerHeight();
+                var tabsHeader = $(this).siblings('.tabs__header').innerHeight();
+                var tabsHeight = tabsBody + tabsHeader + 'px';
+                tabsNav.css({
+                    top: tabsHeight
+                });
+            }
+        });
+    });
 }
 
 function mobileMenuInit() {
@@ -84,11 +94,6 @@ function mobileMenuInit() {
 
 }
 
-function positionTabNavClick() {
-    $(document).on('click', '.tabs__nav li',function () {
-        positionTabNav();
-    })
-}
 
 function overlayClickInit() {
     $(document).on('click', '.overlay', function () {
@@ -129,7 +134,7 @@ function hideModal() {
     hideOverlay();
 }
 
-function menuFixedInit(){
+function menuFixedInit() {
     var headerMenu = $('.header__contacts');
     $(window).scroll(function () {
         //header scroll menu
@@ -142,9 +147,9 @@ function menuFixedInit(){
         // edn header scroll menu
 
 
-
     });
 }
+
 function scrollNavigationInit() {
     $(document).on('click', '.navigation__link', function (e) {
         e.preventDefault();
@@ -161,7 +166,6 @@ $(function () {
     mobileMenuInit();
     carouselInit();
     menuFixedInit();
-    positionTabNavClick();
     positionTabNav();
     accordionInit();
     scrollNavigationInit();
@@ -170,5 +174,7 @@ $(function () {
     showModalInit();
     phoneMaskAndValidationInit();
     $(".tabs").lightTabs();
+    sliderInit();
+
 
 });

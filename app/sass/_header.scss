@@ -76,7 +76,9 @@
       line-height: rem(20);
       letter-spacing: 0.8px;
       color: #282828;
-
+      @include media-breakpoint-down(md){
+        display: none;
+      }
       img {
         display: inline-flex;
         height: rem(14);

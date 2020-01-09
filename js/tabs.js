@@ -1,13 +1,14 @@
 (function($){
     jQuery.fn.lightTabs = function(options){
 
+
         var createTabs = function(){
             tabs = this;
             i = 0;
 
             showPage = function(i){
-                $(tabs).children("div").children(".tabs__content").hide().css({opacity: "0"});
-                $(tabs).children("div").children("div").eq(i).show().css({opacity: "1"});
+                $(tabs).children("div").children(".tabs__content").hide().css({opacity: "0"}).removeClass('active-tab');
+                $(tabs).children("div").children("div").eq(i).show().css({opacity: "1"}).addClass('active-tab');
                 $(tabs).children("ul").children("li").removeClass("active");
                 $(tabs).children("ul").children("li").eq(i).addClass("active");
             }

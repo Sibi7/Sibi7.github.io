@@ -234,8 +234,5 @@
       height: rem(59);
       object-fit: contain;
     }
-    @include media-breakpoint-down(md){
-      display: none;
-    }
   }
 }

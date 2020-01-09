@@ -226,3 +226,23 @@
   position: relative;
   overflow: hidden;
 }
+.modal-review{
+  label{
+    width: 49%;
+    margin-bottom: rem(20);
+    input{
+      width: 100%;
+    }
+  }
+  textarea{
+    width: 100%;
+    border: 1px solid #04aaca;
+    padding: 35px;
+    margin-bottom: rem(20);
+    font-size: 14px;
+  }
+  .modal__submit{
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
