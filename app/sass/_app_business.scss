@@ -1,9 +1,10 @@
 .app-business {
   background: url('../img/dot-form-1.png') center #28C7FE;
   background-size: 100%;
-  @include media-breakpoint-down(md){
+  @include media-breakpoint-down(md) {
     background-size: cover;
   }
+
   &__title {
     color: #fff;
     padding-top: rem(80);
@@ -43,15 +44,17 @@
       display: none;
     }
   }
-  &__mobile{
+
+  &__mobile {
     //height: 1887px;
-    @include media-breakpoint-down(md){
-      .app-business__wrap{
+    @include media-breakpoint-down(md) {
+      .app-business__wrap {
         display: flex;
 
         &:nth-child(2) {
           top: rem(-20);
         }
+
         &:nth-child(3) {
           top: rem(-40);
         }
@@ -59,6 +62,7 @@
         &:nth-child(4) {
           top: rem(-60);
         }
+
         &:nth-child(5) {
           top: rem(-80);
         }
@@ -66,12 +70,15 @@
         &:nth-child(6) {
           top: rem(-100);
         }
+
         &:nth-child(7) {
           top: rem(-120);
         }
+
         &:nth-child(8) {
           top: rem(-140);
         }
+
         &:nth-child(9) {
           top: rem(-160);
         }
@@ -108,20 +115,16 @@
     @include media-breakpoint-down(md) {
       width: rem(160);
       height: rem(177);
-      img{
+      img {
         width: 50px;
 
       }
-      h1, h2, h3, h4, h5, h6{
-        font-size: 10px;
+      h1, h2, h3, h4, h5, h6 {
+        font-size: 13px;
         font-weight: 700;
         line-height: 11.11px;
         margin-top: 10px;
-        max-width: 100px;
         text-align: center;
-        @include media-breakpoint-down(md){
-          max-width: none;
-        }
       }
     }
   }

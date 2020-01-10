@@ -318,7 +318,7 @@
     }
 
     @include media-breakpoint-down(md) {
-      max-width: rem(130);
+      max-width: rem(150);
       margin-right: 0;
       margin-bottom: rem(30);
       img {
@@ -326,11 +326,12 @@
         width: rem(50);
       }
       h1, h2, h3, h4, h5, h6 {
-        font-size: rem(12);
-        line-height: rem(12);
+        font-size: rem(17);
+        line-height: rem(17);
+        margin-top: rem(10);
       }
       p {
-        font-size: rem(10);
+        font-size: rem(13);
         line-height: rem(17);
         margin-bottom: 0;
       }
