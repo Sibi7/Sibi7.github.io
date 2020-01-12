@@ -227,7 +227,9 @@
         span {
           color: #04aaca;
         }
-
+    img{
+      max-width: rem(20);
+    }
       }
 
       &__price {
@@ -244,7 +246,7 @@
 
       &__footer {
         text-align: center;
-        padding-top: 54px;
+        padding-top: 74px;
 
         h1, h2, h3, h4, h5, h6 {
           font-size: 15px;

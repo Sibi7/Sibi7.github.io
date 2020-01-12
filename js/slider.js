@@ -5,16 +5,22 @@ function sliderInit() {
     setCounter();
 
     $(document).on('click', '.prev', function () {
-        if (cur < slides.length - 1) prev()
+        if (cur < slides.length - 1) prev();
+       else next()
+
     });
     $(document).on('click', '.next', function () {
-        if (cur > 0) next()
+        if (cur > 0) next();
+        else prev()
+
+
     });
 
     function next() {
         slides[cur].classList.add('prev-slide');
         slides[cur - 1].classList.remove('next-slide');
         cur--;
+
         setCounter();
     }
 
@@ -30,10 +36,12 @@ function sliderInit() {
     }
     slides.swipe({
         swipeLeft: function () {
-            if (cur > 0) next()
+            if (cur > 0) next();
+            else prev();
         },
         swipeRight: function () {
-            if (cur < slides.length - 1) prev()
+            if (cur < slides.length - 1) prev();
+            else next();
 
         },
     });

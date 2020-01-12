@@ -14,7 +14,6 @@
       margin-bottom: rem(25);
     }
   }
-
   &__wrap {
     display: flex;
     justify-content: space-between;
@@ -23,6 +22,7 @@
   }
 
   &__item {
+    display: none;
     position: relative;
     background: #f2efef;
     padding: rem(35) rem(45);

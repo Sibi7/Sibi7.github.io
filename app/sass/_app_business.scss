@@ -46,7 +46,7 @@
   }
 
   &__mobile {
-    //height: 1887px;
+    height: 1475px;
     @include media-breakpoint-down(md) {
       .app-business__wrap {
         display: flex;

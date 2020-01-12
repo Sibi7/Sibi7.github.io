@@ -121,6 +121,7 @@
   }
 
   &__phones-wrap {
+    position: relative;
     a {
       color: #282828;
       font-family: "TTNormsExtraBold", sans-serif;
@@ -129,10 +130,14 @@
       letter-spacing: 1.06px;
 
     }
+    img{
+      position: absolute;
+      left: 0;
+      transform: translateY(-50%);
+      top: 50%;
+    }
     @include media-breakpoint-down(md){
       a{
-        font-size: rem(18);
-        line-height: rem(20);
         display: block;
       }
       img{

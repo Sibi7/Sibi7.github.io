@@ -166,7 +166,25 @@ function scrollNavigationInit() {
     });
 }
 
+function loadReviews(){
+    var reviewsItem = $('.reviews__item:lt(4)').show();
+    $(document).on('click', '.reviews__btn-all', function (e) {
+        e.preventDefault();
+        var reviewsItem = $('.reviews__item:lt(6)').show();
+    });
+}
+function loadPhoto(){
+    var photoItem = $('.gallery__item:lt(4)').show();
+    $(document).on('click', '.gallery__btn', function (e) {
+        e.preventDefault();
+        var photoItem = $('.gallery__item:lt(8)').show();
+    });
+}
+
+
 $(function () {
+    loadReviews();
+    loadPhoto();
     mobileMenuInit();
     carouselInit();
     menuFixedInit();
