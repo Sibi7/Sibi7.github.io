@@ -1,0 +1,15 @@
+.footer{
+  &__wrap{
+    width: 100%;
+    padding: 40px 0;
+    border-top: 4px solid #9F9F9F;
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-text-color);
+    font-size: 15px;
+    a{
+      color: var(--main-text-color);
+      font-family: "ProximaNovaBlack", sans-serif;
+    }
+  }
+}

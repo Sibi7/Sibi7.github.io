@@ -1,0 +1,45 @@
+@import "_vars";
+.header{
+  padding-top: 78px;
+  margin-bottom: 50px;
+  &__menu{
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+    padding: 0;
+    li{
+      a{
+        position: relative;
+        font-weight: 600;
+        font-family: "ProximaNovaSemiBold", sans-serif;
+        font-size: 20px;
+        color: #fff;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin: 0 20px;
+        transition: 300ms ease;
+        text-shadow: 1px 0 0 transparent;
+        &:before{
+          content: '';
+          position: absolute;
+          transition: 300ms ease;
+          height: 6px;
+          width: 0;
+          bottom: -20px;
+          background: var(--action-color);
+        }
+        &:hover{
+          text-shadow: 1px 0 0 #fff;
+          &:before{
+            width: 100%;
+          }
+        }
+
+      }
+    }
+  }
+  &__wrap{
+    display: flex;
+    align-items: center;
+  }
+}

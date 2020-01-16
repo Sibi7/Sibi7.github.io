@@ -1,0 +1,16 @@
+.home-page{
+  background: url("../img/home-bg.png") no-repeat center;
+  background-size: cover;
+  &__content{
+    text-align: center;
+    h1,h2,h3,h4,h5,h6{
+      font-size: 15px;
+      text-align: center;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-family: "ProximaNovaBlack", sans-serif;
+      margin-bottom: 20px;
+      margin-top: 70px;
+    }
+  }
+}
