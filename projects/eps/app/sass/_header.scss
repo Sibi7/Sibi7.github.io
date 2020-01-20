@@ -36,6 +36,12 @@
         }
 
       }
+      .active{
+        &:before{
+          width: 100%;
+          text-shadow: 1px 0 0 #fff;
+        }
+      }
     }
   }
   &__wrap{

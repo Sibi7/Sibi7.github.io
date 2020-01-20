@@ -6,6 +6,8 @@
 @import "_fonts";
 @import "_home";
 @import "_dropdown";
+@import "_about";
+@import "_advantage";
 
 ::placeholder {
   color: #666;
@@ -69,6 +71,8 @@ a:hover {
 }
 
 .title {
+  white-space: nowrap;
+  width: 100%;
   position: relative;
   font-size: 80px;
   line-height: 80px;
@@ -118,16 +122,38 @@ a:hover {
   }
 }
 .desk {
-  margin-bottom: 40px;
+  position: relative;
+  margin-bottom:  30px;
   font-size: 20px;
   color: var(--main-text-color);
 
 }
 
 .content-wrap {
+  position: relative;
   max-width: 418px;
   margin-left: 40px;
   margin-bottom: 50px;
+  &__title{
+    display: flex;
+    margin-left: auto;
+    font-size: 40px;
+    color: var(--action-color);
+    letter-spacing: 0.155em;
+    font-family: "ProximaNovaBlack",sans-serif;
+    line-height: 131.19%;
+    margin-bottom: 40px;
+    position: relative;
+    width: 480px;
+    &:before{
+      content: "";
+      position: absolute;
+      left: -25px;
+      height: 100%;
+      width: 4px;
+      background: var(--action-color);
+    }
+  }
 }
 .year{
   position: absolute;
@@ -192,6 +218,19 @@ a:hover {
   display: inline-flex;
   width: 100%;
   border-top: 3px solid #000000;
+}
+.title-wrap{
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+}
+.services{
+
+}
+.sun{
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
 }
 
 @import "media"; // Always at the end

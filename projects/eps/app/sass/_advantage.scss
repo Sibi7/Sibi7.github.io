@@ -1,0 +1,62 @@
+.advantage{
+  width: 100%;
+  background: var(--background-color);
+  &__title{
+    position: relative;
+    font-size: 40px;
+    font-family: "ProximaNovaBlack", sans-serif;
+    letter-spacing: 0.23em;
+    text-transform: uppercase;
+    color: var(--title-color);
+   margin: 70px auto;
+    &:before{
+      content: '';
+      position: absolute;
+      height: 4px;
+      width: 30%;
+      right: 15px;
+      bottom: 0;
+      background: var(--action-color);
+    }
+  }
+  &__item{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  &__item-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 345px;
+    height: 345px;
+    background: var(--action-color);
+    img{
+      max-width: 200px;
+    }
+  }
+  &__absolute{
+    left: -50px;
+    position: absolute;
+    top: 0;
+  }
+  &__text{
+
+  }
+}
+.adv-clients{
+  width: 100%;
+  background: var(--background-color);
+  &__wrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    img{
+      display: inline-flex;
+      margin-bottom: 90px;
+      width: 33%;
+      max-height: 100px;
+    }
+  }
+}
