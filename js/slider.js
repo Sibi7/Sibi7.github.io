@@ -6,14 +6,10 @@ function sliderInit() {
 
     $(document).on('click', '.prev', function () {
         if (cur < slides.length - 1) prev();
-       else next()
 
     });
     $(document).on('click', '.next', function () {
         if (cur > 0) next();
-        else prev()
-
-
     });
 
     function next() {
@@ -37,11 +33,9 @@ function sliderInit() {
     slides.swipe({
         swipeLeft: function () {
             if (cur > 0) next();
-            else prev();
         },
         swipeRight: function () {
             if (cur < slides.length - 1) prev();
-            else next();
 
         },
     });
