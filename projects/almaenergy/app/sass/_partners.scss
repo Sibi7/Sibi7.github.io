@@ -1,0 +1,34 @@
+.partners {
+  margin-bottom: 100px;
+  position: relative;
+  &__title {
+    margin-bottom: 40px;
+    font-family: 'ProximaNovaBlack', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #ED6C43;
+    @include media-breakpoint-down(sm) {
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    margin-bottom: 40px;
+    width: 27%;
+    transition: .4s;
+    @include media-breakpoint-down(sm) {
+      width: 45%;
+    }
+    @include media-breakpoint-up(md) {
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $primary-ultradark;
+  z-index: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+
+  &__bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 17px;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    z-index: 99;
+    &__logo {
+      height: 20px;
+    }
+    &__phone {
+      padding: 0 40px;
+      margin-left: auto;
+      font-family: 'ProximaNovaBold', sans-serif;
+      font-size: 20px;
+      line-height: 24px;
+      color: #fff;
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+    &__menu_button {
+      padding: 0;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background-color: transparent;
+      @include media-breakpoint-down(sm) {
+        margin-left: auto;
+      }
+      &:before, &:after {
+        content: '';
+        display: block;
+        height: 4px;
+        width: 30px;
+        background-color: #fff;
+      }
+      &:before {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &__list {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    transform: translateY(-50%);
+
+    .nav__item {
+      padding: 0.5rem 1rem;
+
+      @media (min-width: $mobile-width) {
+        width: percentage(1/3);
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    a {
+      display: inline-block;
+      color: $primary;
+      font-size: 1rem;
+      line-height: 1.5;
+
+      &:hover {
+        color: $primary-light;
+      }
+
+      &.is-active {
+        color: $primary-ultralight;
+      }
+
+      @media (min-width: $mobile-width) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

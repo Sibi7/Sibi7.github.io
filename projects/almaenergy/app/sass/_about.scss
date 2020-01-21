@@ -1,0 +1,98 @@
+.about {
+  position: relative;
+  &__header {
+    padding-top: 500px;
+    background: url("../img/5photosite 1.png") center center no-repeat;
+    background-size: cover;
+    @include media-breakpoint-down(sm){
+      background-position: left;
+    }
+  }
+  &__title {
+    padding: 100px 0 20px 0;
+    position: relative;
+    background-color: rgba(237,108,67, 0.2);
+    &_text {
+
+      margin: 0;
+      font-weight: 900;
+      font-size: 120px;
+      line-height: 73px;
+      text-transform: uppercase;
+      color: #fff;
+      font-family: "ProximaNovaBlack", sans-serif;
+      @include media-breakpoint-down(sm){
+        font-size: 60px;
+        line-height: 73px;
+        letter-spacing: 0.05em;
+
+      }
+    }
+  }
+  &__subtitle{
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: "ProximaNovaBold",sans-serif;
+    line-height: 150%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    @include media-breakpoint-down(sm){
+      font-size: 15px;
+      letter-spacing: 0.05em;
+    }
+  }
+  &__desk{
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    margin-bottom: 40px;
+    @include media-breakpoint-down(sm){
+      font-size: 15px;
+      letter-spacing: 0.05em;
+    }
+  }
+  &__presentation{
+    width: 100%;
+    padding: 30px;
+    border-top: 6px solid #ED6C43;
+    border-bottom: 6px solid #ED6C43;
+    text-align: center;
+    margin-bottom: 100px;
+    @include media-breakpoint-down(sm){
+      margin-top: 60px;
+    }
+    img{
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+    a{
+      font-family: "ProximaNovaExtraBold", sans-serif;
+      color: #ED6C43;
+      letter-spacing: 0.05em;
+      font-size: 30px;
+      transition: 200ms ease;
+      @include media-breakpoint-down(sm){
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.05em
+      }
+      &:hover{
+        color: darken(#ED6C43, 5%);
+        transition: 200ms ease;
+      }
+    }
+    span{
+      display: block;
+      text-transform: uppercase;
+      font-size: 20px;
+      margin-top: 20px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      @include media-breakpoint-down(sm){
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+}

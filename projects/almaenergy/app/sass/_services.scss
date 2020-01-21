@@ -1,0 +1,51 @@
+.services {
+  position: relative;
+  &__header {
+    padding-top: 570px;
+    background: url("../img/3photosite.png") center center no-repeat;
+    background-size: cover;
+  }
+  &__title {
+    padding: 15px 0;
+    position: relative;
+    background-color: rgba(237,108,67, 0.5);
+    &_text {
+      margin: 0;
+      font-family: 'ProximaNovaBlack', sans-serif;
+      font-size: 90px;
+      text-transform: uppercase;
+      line-height: 1.2;
+      color: #fff;
+      @include media-breakpoint-down(sm) {
+        font-size: 30px;
+        line-height: 1.5;
+      }
+    }
+  }
+  &__list {
+    margin: 65px 0;
+    padding: 0;
+    font-size: 30px;
+    list-style-type: none;
+    counter-reset: count;
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+    }
+    &_item {
+      margin-bottom: 30px;
+      counter-increment: count;
+      &_text {
+        &:before {
+          content: counter(count)'.';
+          font-size: 40px;
+          margin-right: 20px;
+          font-family: 'ProximaNovaBold', sans-serif;
+          @include media-breakpoint-down(sm) {
+            font-size: 30px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

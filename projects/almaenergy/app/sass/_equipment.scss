@@ -1,0 +1,57 @@
+.equipment {
+  position: relative;
+  &__header {
+    padding-top: 570px;
+    background: url("../img/6photosite1.png") center center no-repeat;
+    background-size: cover;
+    @include media-breakpoint-down(sm) {
+      background: url("../img/6photosite1.png") 20% 50% no-repeat;
+    }
+  }
+  &__title {
+    padding: 15px 0;
+    position: relative;
+    background-color: rgba(237,108,67, 0.5);
+    &_text {
+      margin: 0;
+      font-family: 'ProximaNovaBlack', sans-serif;
+      font-size: 60px;
+      text-transform: uppercase;
+      line-height: 1.5;
+      color: #fff;
+      @include media-breakpoint-down(sm) {
+        font-size: 30px;
+      }
+    }
+  }
+  &__list {
+    margin: 65px 0;
+    padding: 0;
+    font-size: 30px;
+    list-style-type: none;
+    @include media-breakpoint-down(sm) {
+      font-size: 15px;
+    }
+    &_item {
+      margin-bottom: 30px;
+      display: flex;
+      text-transform: uppercase;
+      @include media-breakpoint-up(md) {
+        align-items: baseline;
+      }
+      &:before {
+        flex-shrink: 0;
+        margin-right: 30px;
+        content: '';
+        display: inline-block;
+        height: 22px;
+        width: 22px;
+        border-radius: 50%;
+        background-color: #ED6C43;
+      }
+      &_text {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
