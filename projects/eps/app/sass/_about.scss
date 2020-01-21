@@ -1,5 +1,7 @@
 .about-page{
-
+  .year{
+    top: 200px;
+  }
   &__s{
     background: url("../img/about-bg.png") no-repeat center;
     background-size: cover;
@@ -25,8 +27,5 @@
      width: 375px;
      height: 375px;
      background: var(--action-color);
-     img{
-       max-width: 200px;
-     }
    }
 }
