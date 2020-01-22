@@ -21,6 +21,14 @@
     z-index: 99;
     &__logo {
       height: 20px;
+      path {
+        stroke-dasharray: 400;
+        stroke-dashoffset: 1000;
+        animation-name: dash;
+        animation-duration: 10s;
+        animation-fill-mode: forwards;
+        stroke-width: 6;
+      }
     }
     &__phone {
       padding: 0 40px;
@@ -96,5 +104,14 @@
         font-size: 1.5rem;
       }
     }
+  }
+}
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke: none;
   }
 }

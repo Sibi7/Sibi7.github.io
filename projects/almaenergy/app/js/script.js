@@ -12,7 +12,6 @@ let navigation = {
 
         // Reset overflow and height on load
         self.$main.style.overflow = 'auto';
-        self.$main.style.height = 'auto';
 
 
         // Handle scroll events
