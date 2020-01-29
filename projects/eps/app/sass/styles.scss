@@ -9,6 +9,9 @@
 @import "_about";
 @import "_advantage";
 @import "_services";
+@import "_project";
+@import "_partners";
+@import "_special-offer";
 
 ::placeholder {
   color: #666;
@@ -83,7 +86,7 @@ a:hover {
   margin-top: 80px;
   margin-bottom: 50px;
   padding-left: 50px;
-  z-index: 0;
+  z-index: 1;
   &:before {
     content: '';
     z-index: -1;
@@ -219,6 +222,7 @@ a:hover {
   display: inline-flex;
   width: 100%;
   border-top: 3px solid #000000;
+  z-index: 1;
 }
 .title-wrap{
   display: flex;

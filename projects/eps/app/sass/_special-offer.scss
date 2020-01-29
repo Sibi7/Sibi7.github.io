@@ -1,0 +1,160 @@
+.special-offer {
+  .year {
+    top: 200px;
+  }
+
+  .sun {
+    top: 405px;
+    right: 20%;
+
+    img {
+      width: 66px;
+      height: 66px;
+    }
+  }
+
+  &__s {
+    background: url("../img/partnrts-bg.png") no-repeat top var(--background-color);
+    background-size: 100% 1100px;
+  }
+
+  &__content {
+    text-align: center;
+
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 15px;
+      text-align: center;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-family: "ProximaNovaBlack", sans-serif;
+      margin-bottom: 20px;
+      margin-top: 70px;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 344px;
+    margin-right: 54px;
+    margin-bottom: 130px;
+
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 20px;
+      color: var(--main-text-color);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-family: "ProximaNovaBold", sans-serif;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 160%;
+      color: var(--main-text-color);
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    .button{
+      width: 237px;
+    }
+  }
+
+  &__img-wrap {
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+
+    margin-bottom: 60px;
+  }
+
+  &__item-link {
+    position: relative;
+    display: inline-flex;
+    overflow: hidden;
+    align-items: center;
+    width: fit-content;
+    color: #fff;
+    font-family: "ProximaNovaExtraBold", sans-serif;
+    font-size: 20px;
+    line-height: 160%;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      height: 15px;
+      width: 15px;
+      background: var(--action-color);
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 30px;
+      height: 6px;
+      width: 0;
+      background: var(--action-color);
+      transition: 300ms ease;
+    }
+
+    &:hover {
+      color: #fff;
+
+      &:after {
+        transition: 300ms ease;
+        width: 100%;
+      }
+    }
+  }
+  &__contacts{
+    margin-top: 80px;
+    h1,h2,h3,h4,h5,h6{
+      font-size: 30px;
+      font-family: "ProximaNovaExtraBold", sans-serif;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+    p{
+      font-size: 20px;
+      color: var(--main-text-color);
+      font-family: "ProximaNovaExtraBold",sans-serif;
+    }
+    .button{
+      margin-top: 152px;
+    }
+  }
+  &__contacts-item{
+    margin-bottom: 25px;
+    img{
+      width: 25px;
+      object-fit: contain;
+      margin-right: 20px;
+    }
+    a{
+      font-size: 20px;
+      color: var(--main-text-color);
+      font-family: "ProximaNovaExtraBold", sans-serif;
+    }
+  }
+  &__contacts-desk{
+    max-width: 345px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+
+}
