@@ -1,0 +1,256 @@
+.contacts-page {
+  .year {
+    top: 200px;
+  }
+
+  .sun {
+    top: 405px;
+    right: 20%;
+
+    img {
+      width: 176px;
+      height: 176px;
+    }
+  }
+
+  &__s {
+    background: url("../img/contacts-bg.png") no-repeat top var(--background-color);
+    background-size: 100% 1100px;
+  }
+
+  &__content {
+    text-align: center;
+
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 15px;
+      text-align: center;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-family: "ProximaNovaBlack", sans-serif;
+      margin-bottom: 20px;
+      margin-top: 70px;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 344px;
+    margin-right: 54px;
+    margin-bottom: 130px;
+
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 20px;
+      color: var(--main-text-color);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-family: "ProximaNovaBold", sans-serif;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 160%;
+      color: var(--main-text-color);
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    .button {
+      width: 237px;
+    }
+  }
+
+  &__img-wrap {
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+
+    margin-bottom: 60px;
+  }
+
+  &__item-link {
+    position: relative;
+    display: inline-flex;
+    overflow: hidden;
+    align-items: center;
+    width: fit-content;
+    color: #fff;
+    font-family: "ProximaNovaExtraBold", sans-serif;
+    font-size: 20px;
+    line-height: 160%;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      height: 15px;
+      width: 15px;
+      background: var(--action-color);
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 30px;
+      height: 6px;
+      width: 0;
+      background: var(--action-color);
+      transition: 300ms ease;
+    }
+
+    &:hover {
+      color: #fff;
+
+      &:after {
+        transition: 300ms ease;
+        width: 100%;
+      }
+    }
+  }
+
+  &__contacts {
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 30px;
+      font-family: "ProximaNovaExtraBold", sans-serif;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 20px;
+      color: var(--main-text-color);
+    }
+
+    .button {
+      margin-top: 152px;
+    }
+  }
+
+  &__contacts-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    margin-bottom: 25px;
+
+    img {
+      width: 25px;
+      object-fit: contain;
+      margin-right: 20px;
+      margin-top: 5px;
+    }
+
+    a {
+      font-size: 30px;
+      color: var(--main-text-color);
+    }
+
+    h2 {
+      width: 100%;
+      padding-left: 45px;
+      text-transform: uppercase;
+      font-size: 30px;
+      margin: 0;
+      color: #eee;
+      letter-spacing: 3px;
+    }
+  }
+
+  &__contacts-desk {
+    max-width: 345px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+
+  &__map {
+    height: 586px;
+    width: 586px;
+    margin-left: auto;
+
+    iframe {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+
+  .red {
+    color: var(--action-color);
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 75px;
+    justify-content: center;
+    padding: 57px 123px;
+    background: rgba(255, 255, 255, 0.2);
+
+    h2 {
+      position: relative;
+      width: 100%;
+      font-family: "ProximaNovaSemiBold", sans-serif;
+      text-align: left;
+      font-size: 40px;
+      line-height: 30px;
+      color: var(--main-text-color);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding-left: 48px;
+      margin-bottom: 30px;
+      &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        background: var(--action-color);
+      }
+    }
+
+    input {
+      background: transparent;
+      border: none;
+      color: #fff;
+      border-bottom: 2px solid #fff;
+      width: 100%;
+      padding: 18px 0;
+      margin-bottom: 20px;
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+
+    textarea {
+      padding: 18px 0;
+      background: transparent;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #fff;
+      color: #fff;
+      resize: none;
+      height: 70px;
+    margin-bottom: 89px;
+      &::placeholder {
+        color: #fff;
+      }
+    }
+  }
+
+}
