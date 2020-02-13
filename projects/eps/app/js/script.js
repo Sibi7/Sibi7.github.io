@@ -36,8 +36,17 @@ function carouselInit(){
         slidesToScroll: 1
     });
 }
+function menuActiveInit(){
+    var menu = $('.header-nav');
+    $(document).on('click', '.header__hamburger', function () {
+        $(this).toggleClass('menu-active');
+        menu.toggleClass('active')
+
+    })
+}
 $(function () {
     carouselInit();
+    menuActiveInit();
     var dd = new DropDown( $('#dd') );
 
     $(document).click(function() {
