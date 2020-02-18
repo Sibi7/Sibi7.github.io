@@ -33,31 +33,64 @@
 
 <body class="page-404">
 <section class="page-404__s">
+<!-- start header.html-->
+<header class="header">
+    <div class="container">
+       <div class="row">
+           <div class="header__wrap">
+               <div class="header__logo">
+                   <a href="./"><img src="img/logo-white.svg" alt="logo"></a>
+               </div>
+               <div id="dd" class="wrapper-dropdown-3" tabindex="1">
+                   <span>RU</span>
+                   <ul class="dropdown">
+                       <li>RU</li>
+                       <li>EN</li>
+                   </ul>
+               </div>
+               <div class="header__hamburger">
+                   <span></span>
+                   <span></span>
+               </div>
+               <nav class="header-nav">
+                   <ul class="header__menu">
+                       <li><a href="./about.html">О компании</a></li>
+                       <li><a href="./services.html">Услуги</a></li>
+                       <li><a href="./project.html">Проекты</a></li>
+                       <li><a href="./partners.html">Партнёры</a></li>
+                       <li><a href="./contacts.html">Контакты</a></li>
+                   </ul>
+               </nav>
+           </div>
+       </div>
+    </div>
+    <div class="mobile-menu">
+        <nav class="header-nav" >
+            <ul class="header__menu">
+                <li><a href="./about.html">О компании</a></li>
+                <li><a href="./services.html">Услуги</a></li>
+                <li><a href="./project.html">Проекты</a></li>
+                <li><a href="./partners.html">Партнёры</a></li>
+                <li><a href="./contacts.html">Контакты</a></li>
+            </ul>
+            <div class="mobile-menu-footer">
+                <a href="#" class="mobile-menu-footer-link">
+                    <img src="./img/icons/pin.svg" alt="direction">
+                    <span>ПРОЛОЖИТЬ<br /> МАРШРУТ</span>
+                </a>
+                <a href="#" class="mobile-menu-footer-link">
+                    <span>ПОЗВОНИТЬ<br /> В ОФИС</span>
+                    <img src="./img/icons/mobile.svg" alt="direction">
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="header__clearfix"></div>
+
+<!-- end header.html-->
     <div class="container">
         <div class="row">
-            <header class="header">
-                <div class="header__wrap">
-                    <div class="header__logo">
-                        <a href="./"><img src="img/logo-white.svg" alt="logo"></a>
-                    </div>
-                    <div id="dd" class="wrapper-dropdown-3" tabindex="1">
-                        <span>RU</span>
-                        <ul class="dropdown">
-                            <li>RU</li>
-                            <li>EN</li>
-                        </ul>
-                    </div>
-                    <nav>
-                        <ul class="header__menu">
-                            <li><a href="./about.html">О компании</a></li>
-                            <li><a href="./services.html">Услуги</a></li>
-                            <li><a href="./project.html">Проекты</a></li>
-                            <li><a href="./partners.html">Партнёры</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
             <span class="year">С 2012 ГОДА</span>
             <div class="title-wrap">
                 <h1 class="title">Not Found </h1>
@@ -67,7 +100,7 @@
         </div>
         <div class="page-404__contacts">
             <div class="row">
-                <div class="col-5 d-flex flex-column justify-content-around">
+                <div class="page-404__text">
                     <div class="page-404__contacts-item">
                         <p>
                             Похоже, мы не можем найти нужную вам страницу.
@@ -99,6 +132,7 @@
 
 <script src='js/jquery-3.2.1.js'></script>
 <script src='js/slick.min.js'></script>
+<script src='js/swup.min.js'></script>
 <script src="js/script.min.js"></script>
 </html>
 <!-- end html_close.html-->

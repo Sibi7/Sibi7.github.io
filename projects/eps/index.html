@@ -66,7 +66,7 @@
        </div>
     </div>
     <div class="mobile-menu">
-        <nav class="header-nav">
+        <nav class="header-nav" >
             <ul class="header__menu">
                 <li><a href="./about.html">О компании</a></li>
                 <li><a href="./services.html">Услуги</a></li>
@@ -74,9 +74,21 @@
                 <li><a href="./partners.html">Партнёры</a></li>
                 <li><a href="./contacts.html">Контакты</a></li>
             </ul>
+            <div class="mobile-menu-footer">
+                <a href="#" class="mobile-menu-footer-link">
+                    <img src="./img/icons/pin.svg" alt="direction">
+                    <span>ПРОЛОЖИТЬ<br /> МАРШРУТ</span>
+                </a>
+                <a href="#" class="mobile-menu-footer-link">
+                    <span>ПОЗВОНИТЬ<br /> В ОФИС</span>
+                    <img src="./img/icons/mobile.svg" alt="direction">
+                </a>
+            </div>
         </nav>
     </div>
 </header>
+<div class="header__clearfix"></div>
+
 <!-- end header.html-->
     <div class="container">
         <div class="row">
@@ -90,7 +102,7 @@
            </div>
             <div class="col-lg-7 col-md-12">
                 <span class="separator"></span>
-                <div class="home-page__content">
+                <div class="home-page__content" >
                     <h2>СПЕЦИАЛЬНОЕ <br> ПРЕДЛОЖЕНИЕ ПО <br> ПРОДУКЦИИ КОМПАНИИ <br> BENNING</h2>
                     <img src="img/partners/logo_benning_grey.svg" alt=""> <br>
                     <a href="#" class="detail">Подробнее</a>
@@ -98,7 +110,7 @@
             </div>
         </div>
         <div class="row">
-           <div class="col-3">
+           <div class="col-md-3 col-sm-12">
                <h3 class="title-partners">ПАРТНЁРЫ</h3>
            </div>
             <div class="partners-slider">
@@ -133,6 +145,7 @@
 
 <script src='js/jquery-3.2.1.js'></script>
 <script src='js/slick.min.js'></script>
+<script src='js/swup.min.js'></script>
 <script src="js/script.min.js"></script>
 </html>
 <!-- end html_close.html-->

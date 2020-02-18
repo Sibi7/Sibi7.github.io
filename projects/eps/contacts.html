@@ -33,42 +33,74 @@
 
 <body class="contacts-page">
 <section class="contacts-page__s">
+<!-- start header.html-->
+<header class="header">
+    <div class="container">
+       <div class="row">
+           <div class="header__wrap">
+               <div class="header__logo">
+                   <a href="./"><img src="img/logo-white.svg" alt="logo"></a>
+               </div>
+               <div id="dd" class="wrapper-dropdown-3" tabindex="1">
+                   <span>RU</span>
+                   <ul class="dropdown">
+                       <li>RU</li>
+                       <li>EN</li>
+                   </ul>
+               </div>
+               <div class="header__hamburger">
+                   <span></span>
+                   <span></span>
+               </div>
+               <nav class="header-nav">
+                   <ul class="header__menu">
+                       <li><a href="./about.html">О компании</a></li>
+                       <li><a href="./services.html">Услуги</a></li>
+                       <li><a href="./project.html">Проекты</a></li>
+                       <li><a href="./partners.html">Партнёры</a></li>
+                       <li><a href="./contacts.html">Контакты</a></li>
+                   </ul>
+               </nav>
+           </div>
+       </div>
+    </div>
+    <div class="mobile-menu">
+        <nav class="header-nav" >
+            <ul class="header__menu">
+                <li><a href="./about.html">О компании</a></li>
+                <li><a href="./services.html">Услуги</a></li>
+                <li><a href="./project.html">Проекты</a></li>
+                <li><a href="./partners.html">Партнёры</a></li>
+                <li><a href="./contacts.html">Контакты</a></li>
+            </ul>
+            <div class="mobile-menu-footer">
+                <a href="#" class="mobile-menu-footer-link">
+                    <img src="./img/icons/pin.svg" alt="direction">
+                    <span>ПРОЛОЖИТЬ<br /> МАРШРУТ</span>
+                </a>
+                <a href="#" class="mobile-menu-footer-link">
+                    <span>ПОЗВОНИТЬ<br /> В ОФИС</span>
+                    <img src="./img/icons/mobile.svg" alt="direction">
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="header__clearfix"></div>
+
+<!-- end header.html-->
     <div class="container">
         <div class="row">
-            <header class="header">
-                <div class="header__wrap">
-                    <div class="header__logo">
-                        <a href="./"><img src="img/logo-white.svg" alt="logo"></a>
-                    </div>
-                    <div id="dd" class="wrapper-dropdown-3" tabindex="1">
-                        <span>RU</span>
-                        <ul class="dropdown">
-                            <li>RU</li>
-                            <li>EN</li>
-                        </ul>
-                    </div>
-                    <nav>
-                        <ul class="header__menu">
-                            <li><a href="./about.html">О компании</a></li>
-                            <li><a href="./services.html">Услуги</a></li>
-                            <li><a href="./project.html">Проекты</a></li>
-                            <li><a href="./partners.html">Партнёры</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
             <span class="year">С 2012 ГОДА</span>
             <div class="title-wrap">
                 <h1 class="title">КОНТАКТЫ</h1>
                 <span class="separator"></span>
                 <div class="sun"><img src="img/sun.svg" alt="sun"></div>
             </div>
-
         </div>
         <div class="contacts-page__contacts">
-            <div class="row">
-                <div class="col-5 d-flex flex-column justify-content-around">
+            <div class="row d-flex flex-column flex-lg-row align-items-center">
+                <div class="col-12 col-md-8 col-lg-5 d-flex flex-column justify-content-around">
                     <div class="contacts-page__contacts-item">
                         <img src="img/icons/pin.svg" alt="phone">
                         <p> Алматы, Казахстан, <br> проспект Достык, д. 134,<br> БЦ «Пионер-2», 7 этаж, <br>кабинет 701</p>
@@ -88,7 +120,7 @@
                         <a href="mailto:info@eps-ltd.kz">info@eps-ltd.kz</a>
                     </div>
                 </div>
-                <div class="col-7">
+                <div class="col-12 col-md-12 col-lg-7">
                     <div class="contacts-page__map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.733284191357!2d76.9573423157131!3d43.23605138732199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836efe6592c74b%3A0x2fee9e5600ce0911!2z0L_RgNC-0YHQv9C10LrRgiDQlNC-0YHRgtGL0LogMTM0LCDQkNC70LzQsNGC0YsgMDUwMDUxLCDQmtCw0LfQsNGF0YHRgtCw0L0!5e0!3m2!1sru!2sua!4v1580990030327!5m2!1sru!2sua"
                                 width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
@@ -100,9 +132,18 @@
             <div class="contacts-page__wrap">
                 <form class="contacts-page__form" action="#">
                     <h2>НАПИШИТЕ НАМ</h2>
-                    <input type="text"  name="name" placeholder="Ваше имя" required>
-                    <input type="text" name="email" placeholder="Ваш e-mail" required>
-                    <textarea name="mail" placeholder="Текст сообщения"    required></textarea>
+                    <label class="contacts-page__form-label">
+                        <img src="./img/icons/smiled.svg" alt="smile">
+                        <input type="text"  name="name" placeholder="Ваше имя" required>
+                    </label>
+                    <label class="contacts-page__form-label">
+                        <img src="./img/icons/mail.svg" alt="email">
+                        <input type="text" name="email" placeholder="Ваш e-mail" required>
+                    </label>
+                    <label class="contacts-page__form-label">
+                        <img src="./img/icons/enter-text.svg" alt="text">
+                        <textarea name="mail" placeholder="Текст сообщения"    required></textarea>
+                    </label>
                     <button class="button" type="submit">Отправить</button>
                 </form>
             </div>
@@ -128,6 +169,7 @@
 
 <script src='js/jquery-3.2.1.js'></script>
 <script src='js/slick.min.js'></script>
+<script src='js/swup.min.js'></script>
 <script src="js/script.min.js"></script>
 </html>
 <!-- end html_close.html-->

@@ -13,4 +13,20 @@
       margin-top: 70px;
     }
   }
+  .content-wrap{
+    @include media-breakpoint-down(md){
+      margin-top: 70px;
+    }
+  }
+  .year{
+    @include media-breakpoint-down(md){
+      display: none;
+    }
+  }
+  .detail{
+    margin-bottom: 50px;
+  }
+  .title-partners{
+    text-align: center;
+  }
 }

@@ -1,6 +1,21 @@
 .services-page {
   .subtitle {
     font-size: 40px;
+    @include media-breakpoint-down(md) {
+      font-size: 20px;
+      line-height: 160%;
+      letter-spacing: 3px;
+      margin: 0 0 32px;
+    }
+  }
+  .sun {
+    right: -30px;
+    top: 250px;
+    transform: none;
+    left: auto;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
   }
 
   .year {
@@ -10,6 +25,10 @@
   &__s {
     background: url("../img/services-bg.png") no-repeat center;
     background-size: cover;
+    @include media-breakpoint-down(md) {
+      background: url("../img/services-bg.png") no-repeat top left var(--background-color);
+      background-size: auto 100vh;
+    }
   }
 
   &__content {
@@ -27,20 +46,82 @@
   }
 
   &__img {
-    margin: 30px auto;
+    margin: 30px 0 30px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 375px;
-    height: 375px;
+    width: 345px;
+    height: 345px;
     background: var(--action-color);
-
+    @include media-breakpoint-down(md) {
+      margin: 0 0 32px;
+      height: 160px;
+      width: 160px;
+    }
     img {
       max-width: 200px;
+      @include media-breakpoint-down(md) {
+        width: 90%;
+      }
     }
   }
 
+  .advantage__item {
+    position: relative;
+    margin-top: 160px;
+    @include media-breakpoint-down(md) {
+      margin-top: 0;
+      &:first-of-type {
+        margin-bottom: 40px;
+      }
+    }
+    &:before {
+      content: "";
+      height: 133px;
+      width: 4px;
+      background: var(--action-color);
+      position: absolute;
+      top: -200px;
+      right: 438px;
+      @include media-breakpoint-down(md) {
+        top: 0;
+        left: 200px;
+        right: auto;
+      }
+
+    }
+    &-img {
+      @include media-breakpoint-down(md) {
+        height: 160px;
+        width: 160px;
+        margin-bottom: 30px;
+        img {
+          max-width: 90%;
+          max-height: 90%;
+        }
+      }
+    }
+    .subtitle {
+      @include media-breakpoint-down(md) {
+        margin-bottom: 12px;
+      }
+    }
+    .desk {
+      @include media-breakpoint-down(md) {
+        margin-bottom: 12px;
+        .advantage__absolute {
+          position: relative;
+          left: 0;
+          img {
+            height: 15px;
+            width: 15px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .services-step {
@@ -52,8 +133,16 @@
     position: relative;
     text-align: center;
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: 140px;
     width: 600px;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      margin: 0;
+      padding-top: 60px;
+    }
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
     p{
       font-size: 30px;
       line-height: 131.19%;
@@ -64,6 +153,13 @@
       color: var(--title-color);
       padding: 40px 0;
       margin: 0;
+      @include media-breakpoint-down(md) {
+        font-size: 15px;
+        line-height: 160%;
+        letter-spacing: 2px;
+        max-width: 300px;
+        margin: 0 auto;
+      }
     }
     &:before {
       content: '';
@@ -74,6 +170,9 @@
       top: 0;
       transform: translateX(-50%);
       left: 50%;
+      @include media-breakpoint-down(md) {
+        height: 60px;
+      }
     }
     &:after{
       content: "";
@@ -84,6 +183,22 @@
       transform: translateX(-50%);
       left: 50%;
       background: var(--action-color);
+      @include media-breakpoint-down(md) {
+        top: 60px;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  &__advantage {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    @include media-breakpoint-down(md) {
+      padding: 0 15px;
     }
   }
 }

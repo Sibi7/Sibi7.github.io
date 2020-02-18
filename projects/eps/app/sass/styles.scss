@@ -102,6 +102,19 @@ a:hover {
     top: -32px;
     background: var(--action-color);
   }
+  @include media-breakpoint-down(md) {
+    font-size: 30px;
+    line-height: 30px;
+    padding-left: 33px;
+    letter-spacing: 10px;
+    &:before {
+      height: 60px;
+      width: 60px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    letter-spacing: 5px;
+  }
 }
 
 .subtitle {
@@ -177,7 +190,7 @@ a:hover {
 }
 .year{
   position: absolute;
-  right: -100px;
+  right: -80px;
   top: 70px;
   font-size: 15px;
   letter-spacing: 3px;
@@ -193,16 +206,19 @@ a:hover {
     background: var(--action-color);
     left: -40px;
     bottom: 5px;
+    @include media-breakpoint-down(sm){
+      height: 8px;
+      width: 8px;
+      left: -20px;
+    }
   }
   @include media-breakpoint-down(sm){
-    display: none;
+    right: -35px;
+    font-size: 10px;
   }
 }
 .img-responsive {
   display: block;
-  max-width: 100%;
-  height: auto;
-
   &.img-width {
     width: 100%;
   }
@@ -250,6 +266,9 @@ a:hover {
   display: flex;
   width: 100%;
   align-items: baseline;
+  @include media-breakpoint-down(md) {
+    justify-content: center;
+  }
 }
 .services{
 
@@ -261,5 +280,13 @@ a:hover {
 }
 .bg-transparent{
   background-color: transparent;
+}
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
 }
 @import "media"; // Always at the end

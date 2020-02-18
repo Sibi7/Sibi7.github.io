@@ -7,6 +7,9 @@
     top: 405px;
     right: 20%;
 
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
     img {
       width: 66px;
       height: 66px;
@@ -16,6 +19,10 @@
   &__s {
     background: url("../img/partnrts-bg.png") no-repeat top var(--background-color);
     background-size: 100% 1100px;
+
+    @include media-breakpoint-down(md) {
+      background-size: auto 100vh;
+    }
   }
 
   &__content {
@@ -37,6 +44,12 @@
     flex-wrap: wrap;
     width: 100%;
     margin-top: 100px;
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+    }
+    @include media-breakpoint-down(md) {
+      margin-top: 40px;
+    }
   }
 
   &__item {
@@ -45,6 +58,10 @@
     max-width: 344px;
     margin-right: 54px;
     margin-bottom: 130px;
+    @include media-breakpoint-down(lg) {
+      max-width: 90%;
+      margin: 0 auto 50px;
+    }
 
     h1, h2, h3, h4, h5, h6 {
       font-size: 20px;
@@ -59,13 +76,22 @@
       font-size: 20px;
       line-height: 160%;
       color: var(--main-text-color);
+      @include media-breakpoint-down(sm) {
+        font-size: 15px;
+      }
     }
 
     &:nth-child(3n) {
       margin-right: 0;
+      @include media-breakpoint-down(lg) {
+        margin-right: auto;
+      }
     }
     .button{
       width: 237px;
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+      }
     }
   }
 
@@ -123,6 +149,9 @@
   }
   &__contacts{
     margin-top: 80px;
+    @include media-breakpoint-down(md) {
+      margin-top: 20px;
+    }
     h1,h2,h3,h4,h5,h6{
       font-size: 30px;
       font-family: "ProximaNovaExtraBold", sans-serif;
@@ -136,6 +165,10 @@
     }
     .button{
       margin-top: 152px;
+      @include media-breakpoint-down(md) {
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
     }
   }
   &__contacts-item{
@@ -155,6 +188,9 @@
     max-width: 345px;
     margin-top: 80px;
     margin-bottom: 50px;
+    @include media-breakpoint-down(md) {
+      margin: 0;
+    }
   }
 
 }
